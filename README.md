@@ -1,28 +1,21 @@
 <div align="center">
 
-  <!-- ==================== HERO HEADER ANIMATION (CYBER SLICE GRADIENT) ==================== -->
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=6,12,20,28&height=220&section=header&text=Bhavik%20Vasavada&fontSize=48&fontAlignY=38&desc=Python%20Developer%20%E2%80%A2%20Aspiring%20Data%20Scientist&descFontSize=20&descAlignY=62&fontColor=FFFFFF" width="100%" alt="Bhavik Vasavada Header" />
+  <!-- Bespoke Animated Vector Header with Intro & In-Out Transitions -->
+  <img src="assets/header.svg" width="100%" alt="Bhavik Vasavada - Python Developer & Data Science Researcher" />
 
-  <!-- ==================== DYNAMIC TYPING SVG (TERMINAL PROMPT STYLE) ==================== -->
-  <a href="https://github.com/bhavikmv">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&width=660&height=50&lines=%E2%9A%A1+Python+Backend+Developer+%26+Architect;%F0%9F%A7%A0+Aspiring+Data+Scientist+%26+ML+Engineer;%F0%9F%91%81%EF%B8%8F+Computer+Vision+%26+Traffic+AI+(CitySight+AI);%F0%9F%8E%93+BCA+Scholar+(2023-2026)+%40+Sahajanand+College;%F0%9F%9A%80+Building+Scalable+Intelligent+Solutions" alt="Typing SVG Animation" />
-  </a>
+  <br/><br/>
 
-  <br/>
+  <!-- Infinite Scroll Marquee Animation -->
+  <img src="assets/marquee.svg" width="100%" alt="Technical Competencies Marquee" />
 
-  <!-- ==================== RE-DESIGNED QUICK STATUS PILLS ==================== -->
+  <br/><br/>
+
+  <!-- Clean, Unified Contact & Status Bar -->
   <p align="center">
-    <a href="https://github.com/bhavikmv"><img src="https://img.shields.io/badge/STATUS-ACTIVELY%20BUILDING-00F0FF?style=flat-square&logo=rocket&logoColor=0D1117&labelColor=161B22" alt="Status" /></a>&nbsp;&nbsp;
-    <a href="https://github.com/bhavikmv"><img src="https://img.shields.io/badge/EDUCATION-BCA%20%E2%80%A2%202023--2026-A855F7?style=flat-square&logo=googlescholar&logoColor=white&labelColor=161B22" alt="Education" /></a>&nbsp;&nbsp;
-    <a href="https://komarev.com/ghpvc/?username=bhavikmv&style=flat-square&color=00F0FF&labelColor=161B22&label=PROFILE+VIEWS" alt="Profile Views" /></a>
-  </p>
-
-  <!-- ==================== RE-DESIGNED CONTACT & CONNECTIVITY STRIP ==================== -->
-  <p align="center">
-    <a href="mailto:bhavikmv5@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-bhavikmv5%40gmail.com-A855F7?style=flat-square&logo=gmail&logoColor=white&labelColor=161B22" alt="Email" /></a>&nbsp;&nbsp;
-    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-00F0FF?style=flat-square&logo=linkedin&logoColor=0D1117&labelColor=161B22" alt="LinkedIn" /></a>&nbsp;&nbsp;
-    <a href="https://github.com/bhavikmv" target="_blank"><img src="https://img.shields.io/badge/GitHub-Follow-A855F7?style=flat-square&logo=github&logoColor=white&labelColor=161B22" alt="GitHub" /></a>&nbsp;&nbsp;
-    <a href="https://YOUR_PORTFOLIO_URL" target="_blank"><img src="https://img.shields.io/badge/Portfolio-Explore%20Site-00F0FF?style=flat-square&logo=safari&logoColor=0D1117&labelColor=161B22" alt="Portfolio" /></a>
+    <a href="mailto:bhavikmv5@gmail.com"><img src="https://img.shields.io/badge/Email-bhavikmv5%40gmail.com-0F172A?style=flat-square&logo=gmail&logoColor=38BDF8&labelColor=080B11" alt="Email" /></a>&nbsp;&nbsp;
+    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0F172A?style=flat-square&logo=linkedin&logoColor=38BDF8&labelColor=080B11" alt="LinkedIn" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/bhavikmv" target="_blank"><img src="https://img.shields.io/badge/GitHub-bhavikmv-0F172A?style=flat-square&logo=github&logoColor=F8FAFC&labelColor=080B11" alt="GitHub" /></a>&nbsp;&nbsp;
+    <a href="https://YOUR_PORTFOLIO_URL" target="_blank"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-0F172A?style=flat-square&logo=safari&logoColor=38BDF8&labelColor=080B11" alt="Portfolio" /></a>
   </p>
 
 </div>
@@ -31,198 +24,141 @@
 
 ---
 
-### 💫 About Me
+### About
 
-```yaml
-user: Bhavik Vasavada
-role: Python Developer & Aspiring Data Scientist
-education:
-  degree: Bachelor of Computer Applications (BCA)
-  timeline: 2023 – 2026
-  institution: Sahajanand College of IT & Management, Gondal
-core_passions:
-  - Python Backend Development (Django, Flask, REST APIs)
-  - Data Science & Predictive Analytics (NumPy, Pandas, Scikit-learn)
-  - Artificial Intelligence & Computer Vision (ANPR, Traffic Analytics)
-  - Database Modeling & Optimization (PostgreSQL, MySQL)
-current_focus: Building intelligent AI systems & high-performance backend platforms
-motto: "Transforming complex datasets into actionable intelligence and elegant software."
-```
+I am a Python developer and postgraduate student currently pursuing my **M.Sc. in Data Science at Marwadi University**, having previously earned a **Bachelor of Computer Applications (BCA)** from Sahajanand College of IT & Management, Gondal (2023–2026).
 
-- 🎓 **Academic Journey:** Currently pursuing my **BCA (2023–2026)** at *Sahajanand College of IT & Management, Gondal*, strengthening foundational algorithms, software engineering principles, and database management.
-- 🐍 **Python Specialist:** Designing clean, modular architectures using **Django**, **Flask**, and **Django REST Framework** with relational databases (**PostgreSQL**, **MySQL**).
-- 🧠 **Data Science & AI Enthusiast:** Experienced with end-to-end Machine Learning pipelines from exploratory data analysis (EDA) and data wrangling to predictive modeling with **Scikit-learn** and multi-camera **ANPR (Computer Vision)**.
-- 🤝 **Open for Opportunities:** Open for software development internships, freelance collaborations, and cutting-edge Data Science & AI projects.
+My work bridges core software engineering with data intelligence. On the backend, I design and build structured web systems and REST APIs using **Python, Django, Flask**, and relational databases like **PostgreSQL** and **MySQL**. On the analytical side, I focus on building and evaluating end-to-end Machine Learning pipelines using **NumPy, Pandas, and Scikit-Learn**, alongside practical computer vision applications like automated number plate recognition.
+
+I believe in writing code that is straightforward, maintainable, and grounded in sound architectural fundamentals. When tackling engineering problems, my goal is to reduce complexity, validate data integrity, and build tools that solve genuine operational challenges.
 
 <br/>
 
 ---
 
-### 🛠️ Tech Stack & Arsenal
+### Engineering Competencies & Research Focus
 
 <div align="center">
-  <!-- Interactive Skill Icons Grid -->
-  <img src="https://skillicons.dev/icons?i=python,django,flask,php,js,html,css,postgres,mysql,git,github,vscode,postman&theme=dark" alt="Skill Icons" />
+  <img src="assets/stats-card.svg" width="100%" alt="Technical Competencies Dashboard" />
 </div>
 
 <br/>
 
-#### 💻 Programming Languages
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=161B22" alt="Python" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white&labelColor=161B22" alt="PHP" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black&labelColor=161B22" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&labelColor=161B22" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white&labelColor=161B22" alt="CSS3" />
-</p>
+#### Languages & Core Technologies
+Python, PHP, JavaScript, HTML5, CSS3, SQL
 
-#### ⚡ Frameworks & Backends
-<p align="left">
-  <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white&labelColor=161B22" alt="Django" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white&labelColor=161B22" alt="Flask" />
-  <img src="https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square&logo=django&logoColor=white&labelColor=161B22" alt="Django REST Framework" />
-</p>
+#### Frameworks & Backend Architecture
+Django, Django REST Framework, Flask, Relational Data Modeling, RESTful API Design
 
-#### 📊 Data Science & Machine Learning
-<p align="left">
-  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white&labelColor=161B22" alt="NumPy" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white&labelColor=161B22" alt="Pandas" />
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white&labelColor=161B22" alt="Scikit-Learn" />
-  <img src="https://img.shields.io/badge/Jupyter_Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white&labelColor=161B22" alt="Jupyter" />
-</p>
+#### Data Science & Machine Learning
+NumPy, Pandas, Scikit-Learn, Regression & Classification Modeling, Exploratory Data Analysis, Feature Engineering, Computer Vision (ANPR, Vehicle Tracking)
 
-#### 🗄️ Databases & Storage
-<p align="left">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white&labelColor=161B22" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white&labelColor=161B22" alt="MySQL" />
-</p>
-
-#### 🔧 Developer Tools & Platforms
-<p align="left">
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white&labelColor=161B22" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white&labelColor=161B22" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white&labelColor=161B22" alt="VS Code" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white&labelColor=161B22" alt="Postman" />
-</p>
+#### Databases & Environments
+PostgreSQL, MySQL, Git, GitHub, VS Code, Postman, Jupyter Notebook
 
 <br/>
 
 ---
 
-### 🚀 Featured Engineering Projects
+### Featured Projects
 
 <table>
   <thead>
     <tr>
-      <th width="40%"><b>Project Name & Overview</b></th>
-      <th width="40%"><b>Key Features & Highlights</b></th>
-      <th width="20%"><b>Tech Stack & Source</b></th>
+      <th width="35%">Project</th>
+      <th width="45%">Description & Architecture</th>
+      <th width="20%">Stack & Code</th>
     </tr>
   </thead>
   <tbody>
-    <!-- Project 1: CitySight AI -->
+    <!-- CitySight AI -->
     <tr>
       <td>
-        <b>🚦 CitySight AI</b><br/>
-        <sub>Multi-Camera ANPR & Urban Traffic Analytics</sub>
-        <br/><br/>
-        An intelligent urban surveillance and transport analytics platform engineered for automated number plate recognition across distributed camera streams.
+        <b>CitySight AI</b><br/>
+        <sub>Multi-Camera ANPR &amp; Urban Traffic Analytics</sub>
       </td>
       <td>
-        • Multi-stream ANPR camera feed pipeline<br/>
-        • Real-time vehicle detection & speed tracking<br/>
-        • Traffic congestion analysis & heatmaps<br/>
-        • Automated alert generation for violations
+        Designed an automated vehicle tracking and surveillance pipeline capable of processing video feeds across distributed camera points. Implemented automatic number plate recognition (ANPR) algorithms, real-time traffic flow calculations, and automated violation flagging.
       </td>
       <td>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" /><br/><br/>
-        <a href="https://github.com/bhavikmv/CitySight-AI"><img src="https://img.shields.io/badge/Explore_Repo-00F0FF?style=flat-square&logo=github&logoColor=0D1117&labelColor=161B22" /></a>
+        Python<br/>
+        OpenCV<br/>
+        Scikit-Learn<br/><br/>
+        <a href="https://github.com/bhavikmv/CitySight-AI">
+          <img src="https://img.shields.io/badge/Repository-0F172A?style=flat-square&logo=github&logoColor=38BDF8&labelColor=080B11" alt="Repo Link" />
+        </a>
       </td>
     </tr>
-    <!-- Project 2: Tour Management System -->
+    <!-- Tour Management System -->
     <tr>
       <td>
-        <b>🌍 Tour Management System</b><br/>
-        <sub>Full-Stack Tour Booking & Dispatch Engine</sub>
-        <br/><br/>
-        A comprehensive enterprise tour and expedition reservation engine built with secure authentication, scheduling workflows, and transactional integrity.
+        <b>Tour Management System</b><br/>
+        <sub>Enterprise Travel &amp; Reservation Platform</sub>
       </td>
       <td>
-        • Dynamic tour package management & booking<br/>
-        • Django REST Framework APIs for integration<br/>
-        • PostgreSQL relational schema & migrations<br/>
-        • Customer booking status & payment tracking
+        Built a full-featured booking and tour dispatch portal with role-based authorization for customers and operators. Integrated Django REST Framework APIs for scheduling workflows, payment verification, and persistent transactional storage in PostgreSQL.
       </td>
       <td>
-        <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/DRF-A30000?style=flat-square&logo=django&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" /><br/><br/>
-        <a href="https://github.com/bhavikmv/Tour-Management-System"><img src="https://img.shields.io/badge/Explore_Repo-A855F7?style=flat-square&logo=github&logoColor=white&labelColor=161B22" /></a>
+        Django<br/>
+        Django REST Framework<br/>
+        PostgreSQL<br/><br/>
+        <a href="https://github.com/bhavikmv/Tour-Management-System">
+          <img src="https://img.shields.io/badge/Repository-0F172A?style=flat-square&logo=github&logoColor=38BDF8&labelColor=080B11" alt="Repo Link" />
+        </a>
       </td>
     </tr>
-    <!-- Project 3: House Price Prediction -->
+    <!-- House Price Prediction -->
     <tr>
       <td>
-        <b>🏡 House Price Prediction</b><br/>
+        <b>House Price Prediction</b><br/>
         <sub>Machine Learning Valuation Pipeline</sub>
-        <br/><br/>
-        An end-to-end predictive regression model that estimates residential real estate valuations based on demographic, geographic, and structural factors.
       </td>
       <td>
-        • Feature engineering & missing data imputation<br/>
-        • Multi-model benchmark (Linear, Ridge, RF)<br/>
-        • Hyperparameter tuning with cross-validation<br/>
-        • Evaluation with RMSE, MAE, and $R^2$ scores
+        Developed a predictive modeling workflow to evaluate real estate market pricing from multidimensional demographic, structural, and geographic features. Included systematic outlier removal, feature encoding, cross-validation, and error metric benchmarking (RMSE, MAE, R²).
       </td>
       <td>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" /><br/><br/>
-        <a href="https://github.com/bhavikmv/House-Price-Prediction"><img src="https://img.shields.io/badge/Explore_Repo-00F0FF?style=flat-square&logo=github&logoColor=0D1117&labelColor=161B22" /></a>
+        Python<br/>
+        Scikit-Learn<br/>
+        Pandas &amp; NumPy<br/><br/>
+        <a href="https://github.com/bhavikmv/House-Price-Prediction">
+          <img src="https://img.shields.io/badge/Repository-0F172A?style=flat-square&logo=github&logoColor=38BDF8&labelColor=080B11" alt="Repo Link" />
+        </a>
       </td>
     </tr>
-    <!-- Project 4: Phonora -->
+    <!-- Phonora -->
     <tr>
       <td>
-        <b>📱 Phonora</b><br/>
-        <sub>Online Mobile Shop & Inventory System</sub>
-        <br/><br/>
-        A responsive web-based e-commerce platform and inventory management system designed for consumer mobile electronics and accessories.
+        <b>Phonora</b><br/>
+        <sub>Online Mobile Shop &amp; Inventory Management</sub>
       </td>
       <td>
-        • Category-driven dynamic catalog & cart<br/>
-        • Admin stock alerts & order pipeline<br/>
-        • Relational MySQL order-inventory synchronization<br/>
-        • Customer invoice generator & billing history
+        Engineered a commercial e-commerce storefront paired with an internal inventory management back-office for mobile devices. Features relational catalog search, automated stock depletion alerts, and customer invoice generation.
       </td>
       <td>
-        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" /><br/><br/>
-        <a href="https://github.com/bhavikmv/Phonora-Mobile-Shop"><img src="https://img.shields.io/badge/Explore_Repo-A855F7?style=flat-square&logo=github&logoColor=white&labelColor=161B22" /></a>
+        PHP<br/>
+        MySQL<br/>
+        JavaScript<br/><br/>
+        <a href="https://github.com/bhavikmv/Phonora-Mobile-Shop">
+          <img src="https://img.shields.io/badge/Repository-0F172A?style=flat-square&logo=github&logoColor=38BDF8&labelColor=080B11" alt="Repo Link" />
+        </a>
       </td>
     </tr>
-    <!-- Project 5: Gadget Management System -->
+    <!-- Gadget Management System -->
     <tr>
       <td>
-        <b>💻 Gadget Management System</b><br/>
-        <sub>Student Request & Approval Portal</sub>
-        <br/><br/>
-        A streamlined academic asset management platform handling student device requests, faculty approvals, and institutional equipment allocation.
+        <b>Gadget Management System</b><br/>
+        <sub>Institutional Request &amp; Approval Portal</sub>
       </td>
       <td>
-        • Multi-role authorization (Student, Staff, Admin)<br/>
-        • Digital requisition workflow & approval logs<br/>
-        • Return date tracking & penalty prevention<br/>
-        • Audit-ready equipment inventory ledger
+        A university hardware requisition platform replacing paper forms with digital workflows. Incorporates multi-tier review (student request, faculty verification, admin allocation), inventory tracking, and due-date audit logs.
       </td>
       <td>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" /><br/>
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" /><br/><br/>
-        <a href="https://github.com/bhavikmv/Gadget-Management-System"><img src="https://img.shields.io/badge/Explore_Repo-00F0FF?style=flat-square&logo=github&logoColor=0D1117&labelColor=161B22" /></a>
+        Python / Django<br/>
+        MySQL<br/>
+        JavaScript<br/><br/>
+        <a href="https://github.com/bhavikmv/Gadget-Management-System">
+          <img src="https://img.shields.io/badge/Repository-0F172A?style=flat-square&logo=github&logoColor=38BDF8&labelColor=080B11" alt="Repo Link" />
+        </a>
       </td>
     </tr>
   </tbody>
@@ -232,106 +168,61 @@ motto: "Transforming complex datasets into actionable intelligence and elegant s
 
 ---
 
-### 📊 GitHub Activity & Real-Time Analytics
+### Education & Academic Background
+
+- **Master of Science (M.Sc.) in Data Science**
+  *Marwadi University* | Currently Enrolled
+  Specializing in statistical learning, data architecture, predictive algorithms, and high-dimensional analytics.
+
+- **Bachelor of Computer Applications (BCA)**
+  *Sahajanand College of IT & Management, Gondal* | 2023 – 2026
+  Core training in data structures, relational database administration, Python programming, and software engineering.
+
+<br/>
+
+---
+
+### GitHub Activity & Streak
 
 <div align="center">
-
-  <!-- GitHub Main Stats & Streak Stats -->
+  <!-- Reliable GitHub Streak Stats Widget -->
   <a href="https://github.com/bhavikmv">
-    <img src="https://github-readme-stats.vercel.app/api?username=bhavikmv&show_icons=true&theme=tokyonight&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=00f0ff&text_color=e2e8f0&icon_color=a855f7&count_private=true&include_all_commits=true" height="195" alt="Bhavik's GitHub Stats" />
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=bhavikmv&theme=tokyonight&background=0D1117&border=30363D&stroke=30363D&ring=00F0FF&fire=A855F7&currStreakLabel=00F0FF&sideLabels=E2E8F0&sideNums=E2E8F0&currStreakNum=FFFFFF" height="195" alt="Bhavik's Streak Stats" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=bhavikmv&theme=dark&background=080B11&border=1E293B&stroke=1E293B&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=94A3B8&sideNums=F1F5F9&currStreakNum=F8FAFC" height="195" alt="Bhavik's Streak Stats" />
   </a>
-
-  <br/><br/>
-
-  <!-- Top Languages Card -->
-  <a href="https://github.com/bhavikmv">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bhavikmv&layout=compact&theme=tokyonight&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=00f0ff&text_color=e2e8f0&langs_count=8" height="195" alt="Top Languages" />
-  </a>
-
-  <br/><br/>
-
-  <!-- Dynamic Contribution Graph Line -->
-  <a href="https://github.com/bhavikmv">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=bhavikmv&theme=tokyo-night&bg_color=0D1117&color=00F0FF&line=A855F7&point=FFFFFF&area=true&hide_border=false&border_color=30363D" width="95%" alt="Bhavik's Contribution Graph" />
-  </a>
-
 </div>
 
 <br/>
 
 ---
 
-### 🐍 Contribution Activity Graph & Snake
+### Contribution Snake
 
 <div align="center">
-  <!-- Interactive animated contribution snake -->
+  <!-- Contribution Snake Animation (Activated via .github/workflows/snake.yml) -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhavikmv/bhavikmv/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhavikmv/bhavikmv/output/github-contribution-grid-snake.svg">
-    <img alt="Bhavik's GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/bhavikmv/bhavikmv/output/github-contribution-grid-snake-dark.svg" width="100%" />
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/bhavikmv/bhavikmv/output/github-contribution-grid-snake-dark.svg" width="95%" />
   </picture>
   <br/>
-  <sub>⚡ Automatically generated daily from GitHub contribution activity</sub>
+  <sub>Automated via GitHub Actions on the <code>output</code> branch</sub>
 </div>
 
 <br/>
 
 ---
 
-### 🔭 Currently Learning & Expanding
+### Contact & Collaboration
 
-```
-╭─────────────────────────────────────────────────────────────────────────────╮
-│                                                                             │
-│  [■] Deep Learning & Computer Vision (YOLOv8, OpenCV, Tensor Architectures) │
-│  [■] High-Performance Microservices with Django REST Framework & Redis      │
-│  [■] End-to-End MLOps Pipelines (Model Deployment, Monitoring & Tracking)   │
-│  [■] Cloud Infrastructure & Containerization (Docker, PostgreSQL on Cloud)  │
-│                                                                             │
-╰─────────────────────────────────────────────────────────────────────────────╯
-```
+I am open to conversations regarding backend engineering, data science research, internships, and technical collaboration.
 
-- 🔬 **Exploratory AI:** Deepening neural network implementations for advanced real-time video analytics and ANPR scalability.
-- ⚡ **Backend Mastery:** Designing async task processing pipelines utilizing Celery and Redis with Django.
-- 📈 **Applied Data Science:** Experimenting with feature selection algorithms, ensemble boosting (XGBoost, LightGBM), and statistical modeling.
+- **Email:** [bhavikmv5@gmail.com](mailto:bhavikmv5@gmail.com)
+- **LinkedIn:** [linkedin.com/in/YOUR_LINKEDIN_USERNAME](https://linkedin.com/in/YOUR_LINKEDIN_USERNAME)
+- **GitHub:** [github.com/bhavikmv](https://github.com/bhavikmv)
+- **Portfolio:** [YOUR_PORTFOLIO_URL](https://YOUR_PORTFOLIO_URL)
 
 <br/>
 
----
-
-### 🌐 Connect With Me
-
 <div align="center">
-  <p>I am always excited to discuss software engineering, machine learning ideas, and collaborative builds!</p>
-
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-00F0FF?style=flat-square&logo=linkedin&logoColor=0D1117&labelColor=161B22" alt="LinkedIn" /></a>&nbsp;&nbsp;
-  <a href="mailto:bhavikmv5@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-bhavikmv5%40gmail.com-A855F7?style=flat-square&logo=gmail&logoColor=white&labelColor=161B22" alt="Email" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/bhavikmv" target="_blank"><img src="https://img.shields.io/badge/GitHub-Follow-00F0FF?style=flat-square&logo=github&logoColor=0D1117&labelColor=161B22" alt="GitHub" /></a>&nbsp;&nbsp;
-  <a href="https://YOUR_PORTFOLIO_URL" target="_blank"><img src="https://img.shields.io/badge/Portfolio-Visit%20Site-A855F7?style=flat-square&logo=safari&logoColor=white&labelColor=161B22" alt="Portfolio" /></a>&nbsp;&nbsp;
-  <a href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank"><img src="https://img.shields.io/badge/Twitter/X-Follow-00F0FF?style=flat-square&logo=x&logoColor=0D1117&labelColor=161B22" alt="Twitter" /></a>
-
-</div>
-
-<br/>
-
----
-
-<div align="center">
-
-  <!-- ==================== FOOTER INSPIRATIONAL CARD ==================== -->
-  <a href="https://github.com/bhavikmv">
-    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Daily Tech Quote" />
-  </a>
-
-  <br/><br/>
-
-  <p align="center">
-    <i>"First, solve the problem. Then, write the code."</i><br/>
-    <b>Crafted with 💜 by Bhavik Vasavada</b>
-  </p>
-
-  <!-- Animated Footer Cyber Slice -->
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=6,12,20,28&height=120&section=footer" width="100%" alt="Footer Slice" />
-
+  <sub>Bhavik Vasavada · Python Developer &amp; M.Sc. Data Science Scholar</sub>
 </div>
