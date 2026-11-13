@@ -1,6 +1,20 @@
 
 <svg width="100%" viewBox="0 0 1000 440"
      xmlns="http://www.w3.org/2000/svg">
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.svg"
+    width="100%"
+    alt="Bhavik Vasavada - Neural Data Lab"
+  />
+  <br/>
+  <img
+    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/profile-buttons.svg"
+    width="100%"
+    alt="Profile status and contact buttons"
+  />
+</div>
+
   <defs>
     <linearGradient id="saffron" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#D97706"/>

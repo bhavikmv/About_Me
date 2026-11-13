@@ -3,9 +3,15 @@
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.gif"
+    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.svg"
     width="100%"
     alt="Bhavik Vasavada - Neural Data Lab"
+  />
+  <br/>
+  <img
+    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/profile-buttons.svg"
+    width="100%"
+    alt="Profile status and contact buttons"
   />
 </div>
 
