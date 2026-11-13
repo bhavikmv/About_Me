@@ -1,29 +1,28 @@
- <div align="center">
+<div align="center">
 
   <!-- NEURAL DATA LAB -->
-<div align="center">
   <img
-    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.gif"
+    src="assets/heading-animation.svg"
     width="100%"
     alt="Bhavik Vasavada - Neural Data Lab"
   />
-</div>
-  <br/>
 
-  **PYTHON DEVELOPER · DATA SCIENCE · AI/ML**
+  <br/><br/>
 
   <p>
-    <img src="https://img.shields.io/badge/STATUS-ACTIVELY_BUILDING-38BDF8?style=flat-square&labelColor=07090E" />
-    <img src="https://img.shields.io/badge/FOCUS-M.SC_DATA_SCIENCE-818CF8?style=flat-square&labelColor=07090E" />
-    <img src="https://img.shields.io/badge/LOCATION-GUJARAT,_INDIA-38BDF8?style=flat-square&labelColor=07090E" />
+    <img src="https://img.shields.io/badge/STATUS-ACTIVELY_BUILDING-38BDF8?style=flat-square&labelColor=07090E" alt="Status" />
+    <img src="https://img.shields.io/badge/FOCUS-M.SC_DATA_SCIENCE-818CF8?style=flat-square&labelColor=07090E" alt="Focus" />
+    <img src="https://img.shields.io/badge/LOCATION-GUJARAT,_INDIA-38BDF8?style=flat-square&labelColor=07090E" alt="Location" />
   </p>
 
-  <a href="mailto:bhavikmv5@gmail.com">
-    <img src="https://img.shields.io/badge/Contact-Email-38BDF8?style=flat-square&logo=gmail&logoColor=white&labelColor=07090E" />
-  </a>
-  <a href="https://github.com/bhavikmv">
-    <img src="https://img.shields.io/badge/GitHub-Follow-818CF8?style=flat-square&logo=github&logoColor=white&labelColor=07090E" />
-  </a>
+  <p>
+    <a href="mailto:bhavikmv5@gmail.com">
+      <img src="https://img.shields.io/badge/Contact-Email-38BDF8?style=flat-square&logo=gmail&logoColor=white&labelColor=07090E" alt="Email" />
+    </a>
+    <a href="https://github.com/bhavikmv">
+      <img src="https://img.shields.io/badge/GitHub-Follow-818CF8?style=flat-square&logo=github&logoColor=white&labelColor=07090E" alt="GitHub" />
+    </a>
+  </p>
 
 </div>
 
