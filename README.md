@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- ==================== ANIMATED HERO HEADER ==================== -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:07090E,40:0B1324,80:0284C7,100:38BDF8&height=220&section=header&text=Bhavik%20Vasavada&fontSize=48&fontAlignY=36&desc=Python%20Developer%20%E2%80%A2%20M.Sc.%20Data%20Science%20%40%20Marwadi%20University&descFontSize=17&descAlignY=60&fontColor=F8FAFC&animation=fadeIn" width="100%" alt="Bhavik Vasavada Animated Header" />
+  <!-- ==================== HOLOGRAPHIC ANIMATED HEADING ==================== -->
+  <img src="assets/heading-animation.svg" width="100%" alt="Bhavik Vasavada - Holographic Heading" />
 
   <!-- ==================== LIVE TYPING SVG ANIMATION ==================== -->
   <a href="https://github.com/bhavikmv">

@@ -1,0 +1,336 @@
+<svg width="100%" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Dark Navy / Black Gradient -->
+    <linearGradient id="holoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04060B" />
+      <stop offset="45%" stop-color="#080F1E" />
+      <stop offset="75%" stop-color="#050B16" />
+      <stop offset="100%" stop-color="#020408" />
+    </linearGradient>
+
+    <!-- Center Radial Glow -->
+    <radialGradient id="centerCyanGlow" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.14" />
+      <stop offset="40%" stop-color="#0284C7" stop-opacity="0.06" />
+      <stop offset="80%" stop-color="#080F1E" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Holographic Scanning Beam Gradient -->
+    <linearGradient id="beamGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0" />
+      <stop offset="35%" stop-color="#00F0FF" stop-opacity="0.2" />
+      <stop offset="48%" stop-color="#38BDF8" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="52%" stop-color="#00F0FF" stop-opacity="0.85" />
+      <stop offset="65%" stop-color="#0284C7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Continuous Shimmer Gradient (Looping) -->
+    <linearGradient id="shimmerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.75" />
+      <stop offset="52%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="55%" stop-color="#00F0FF" stop-opacity="0.75" />
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Text Mask for Precise Scanning Beam & Shimmer Overlay -->
+    <mask id="textClipMask">
+      <text x="450" y="118" text-anchor="middle" class="mask-text">BHAVIK VASAVADA</text>
+    </mask>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.5" stroke-opacity="0.25" />
+    </pattern>
+
+    <!-- Corner Brackets Gradient -->
+    <linearGradient id="bracketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* ==================== TYPOGRAPHY ==================== */
+    .brand-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Montserrat', 'Inter', Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      letter-spacing: 7px;
+      fill: #FFFFFF;
+      text-anchor: middle;
+    }
+    .mask-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Montserrat', 'Inter', Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      letter-spacing: 7px;
+      fill: #FFFFFF;
+      text-anchor: middle;
+    }
+    .brand-subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 14.5px;
+      letter-spacing: 2px;
+      fill: #38BDF8;
+      text-anchor: middle;
+    }
+    .hologram-telemetry {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 10px;
+      letter-spacing: 2px;
+      fill: #00F0FF;
+      text-anchor: middle;
+      opacity: 0.7;
+    }
+
+    /* ==================== ANIMATION SEQUENCE ==================== */
+
+    /* 1 & 2: Particle Convergence into Center */
+    .particle-cluster {
+      animation: assembleSequence 2.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .particle-p1 { animation: pOrbit1 2.2s ease-in-out forwards; }
+    .particle-p2 { animation: pOrbit2 2.3s ease-in-out forwards; }
+    .particle-p3 { animation: pOrbit3 2.1s ease-in-out forwards; }
+    .particle-p4 { animation: pOrbit4 2.4s ease-in-out forwards; }
+
+    @keyframes assembleSequence {
+      0% { opacity: 0; transform: scale(1.4); }
+      30% { opacity: 0.95; }
+      80% { opacity: 0.7; transform: scale(1.02); }
+      100% { opacity: 0; transform: scale(1); pointer-events: none; }
+    }
+    @keyframes pOrbit1 {
+      0% { transform: translate(-80px, -40px); opacity: 0; }
+      40% { opacity: 1; }
+      100% { transform: translate(0px, 0px); opacity: 0; }
+    }
+    @keyframes pOrbit2 {
+      0% { transform: translate(90px, -35px); opacity: 0; }
+      40% { opacity: 1; }
+      100% { transform: translate(0px, 0px); opacity: 0; }
+    }
+    @keyframes pOrbit3 {
+      0% { transform: translate(-70px, 50px); opacity: 0; }
+      40% { opacity: 1; }
+      100% { transform: translate(0px, 0px); opacity: 0; }
+    }
+    @keyframes pOrbit4 {
+      0% { transform: translate(80px, 45px); opacity: 0; }
+      40% { opacity: 1; }
+      100% { transform: translate(0px, 0px); opacity: 0; }
+    }
+
+    /* 3 & 5: Text Reveal with Neon Cyan Glow */
+    .title-assembly {
+      opacity: 0;
+      animation: revealTextGlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+    }
+    @keyframes revealTextGlow {
+      0% {
+        opacity: 0;
+        transform: scale(0.96);
+        filter: blur(10px);
+      }
+      50% {
+        opacity: 0.8;
+        filter: blur(2px) drop-shadow(0 0 16px rgba(0, 240, 255, 0.9));
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0px) drop-shadow(0 0 8px rgba(0, 240, 255, 0.45));
+      }
+    }
+
+    /* 4: Holographic Scanning Beam */
+    .scan-beam {
+      opacity: 0;
+      animation: scanBeamSweep 1.6s cubic-bezier(0.4, 0, 0.2, 1) 1.6s forwards;
+    }
+    @keyframes scanBeamSweep {
+      0% {
+        opacity: 0;
+        transform: translateX(-350px);
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(450px);
+      }
+    }
+
+    /* 6: Subtle Continuous Holographic Light Movement After Reveal */
+    .continuous-shimmer {
+      opacity: 0;
+      animation: loopShimmer 6s ease-in-out infinite 3.4s;
+    }
+    @keyframes loopShimmer {
+      0% {
+        opacity: 0;
+        transform: translateX(-450px);
+      }
+      15% {
+        opacity: 0.8;
+      }
+      35% {
+        opacity: 0.8;
+      }
+      50% {
+        opacity: 0;
+        transform: translateX(450px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(450px);
+      }
+    }
+
+    /* 6b: Subtle Ambient Light Breathing Glow */
+    .ambient-pulse {
+      animation: subtleBreathe 4.5s ease-in-out infinite alternate;
+    }
+    @keyframes subtleBreathe {
+      0% { opacity: 0.25; }
+      100% { opacity: 0.65; }
+    }
+
+    /* 7: Subtitle Smooth Fade-In */
+    .subtitle-fade {
+      opacity: 0;
+      animation: subtitleEntrance 1.4s cubic-bezier(0.16, 1, 0.3, 1) 2.4s forwards;
+    }
+    @keyframes subtitleEntrance {
+      0% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      100% {
+        opacity: 0.95;
+        transform: translateY(0);
+      }
+    }
+
+    /* Telemetry Tag Fade */
+    .tag-fade {
+      opacity: 0;
+      animation: tagEntrance 1.2s ease-out 0.4s forwards;
+    }
+    @keyframes tagEntrance {
+      0% { opacity: 0; transform: translateY(-4px); }
+      100% { opacity: 0.7; transform: translateY(0); }
+    }
+
+    /* Corner Bracket Pulse */
+    .corner-bracket {
+      animation: bracketGlow 3s ease-in-out infinite alternate;
+    }
+    @keyframes bracketGlow {
+      0% { opacity: 0.3; }
+      100% { opacity: 0.8; }
+    }
+  </style>
+
+  <!-- ==================== 1. DARK NAVY/BLACK BACKGROUND ==================== -->
+  <rect x="1" y="1" width="898" height="238" rx="12" fill="url(#holoBg)" stroke="#131C31" stroke-width="1.2" />
+  <rect x="1" y="1" width="898" height="238" rx="12" fill="url(#cyberGrid)" />
+  <rect x="1" y="1" width="898" height="238" rx="12" fill="url(#centerCyanGlow)" class="ambient-pulse" />
+
+  <!-- Top Laser Edge Accent -->
+  <line x1="80" y1="1" x2="820" y2="1" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.4" />
+  <circle cx="450" cy="1" r="2" fill="#00F0FF" />
+
+  <!-- Holographic Corner Accents -->
+  <g class="corner-bracket" stroke="#00F0FF" stroke-width="1.2" fill="none">
+    <!-- Top-Left -->
+    <path d="M 18 32 L 18 18 L 32 18" />
+    <!-- Top-Right -->
+    <path d="M 882 32 L 882 18 L 868 18" />
+    <!-- Bottom-Left -->
+    <path d="M 18 208 L 18 222 L 32 222" />
+    <!-- Bottom-Right -->
+    <path d="M 882 208 L 882 222 L 868 222" />
+  </g>
+
+  <!-- Telemetry Sub-Tag -->
+  <g class="tag-fade">
+    <text x="450" y="52" class="hologram-telemetry">SYS // DATA_SCIENCE_CORE_ONLINE</text>
+  </g>
+
+  <!-- ==================== 2 & 3. PARTICLES CONVERGING ==================== -->
+  <g class="particle-cluster" transform="translate(450, 110)">
+    <!-- Particle Group 1 (Top-Left) -->
+    <g class="particle-p1">
+      <circle cx="-160" cy="-35" r="3" fill="#00F0FF" opacity="0.9" />
+      <circle cx="-220" cy="-15" r="2" fill="#38BDF8" opacity="0.7" />
+      <circle cx="-110" cy="-45" r="2.5" fill="#60A5FA" opacity="0.8" />
+      <circle cx="-70" cy="-25" r="1.5" fill="#00F0FF" opacity="0.6" />
+    </g>
+    <!-- Particle Group 2 (Top-Right) -->
+    <g class="particle-p2">
+      <circle cx="170" cy="-30" r="3" fill="#38BDF8" opacity="0.9" />
+      <circle cx="230" cy="-18" r="2" fill="#00F0FF" opacity="0.7" />
+      <circle cx="120" cy="-40" r="2.5" fill="#818CF8" opacity="0.8" />
+      <circle cx="80" cy="-22" r="1.5" fill="#38BDF8" opacity="0.6" />
+    </g>
+    <!-- Particle Group 3 (Bottom-Left) -->
+    <g class="particle-p3">
+      <circle cx="-180" cy="35" r="2.5" fill="#00F0FF" opacity="0.85" />
+      <circle cx="-130" cy="45" r="3" fill="#38BDF8" opacity="0.8" />
+      <circle cx="-240" cy="20" r="1.5" fill="#60A5FA" opacity="0.6" />
+      <circle cx="-90" cy="30" r="2" fill="#00F0FF" opacity="0.75" />
+    </g>
+    <!-- Particle Group 4 (Bottom-Right) -->
+    <g class="particle-p4">
+      <circle cx="190" cy="35" r="2.5" fill="#818CF8" opacity="0.85" />
+      <circle cx="140" cy="45" r="3" fill="#00F0FF" opacity="0.8" />
+      <circle cx="240" cy="22" r="1.5" fill="#38BDF8" opacity="0.6" />
+      <circle cx="95" cy="32" r="2" fill="#00F0FF" opacity="0.75" />
+    </g>
+  </g>
+
+  <!-- ==================== 3 & 5. MAIN TEXT WITH CYAN GLOW ==================== -->
+  <g class="title-assembly">
+    <!-- Base Holographic Text -->
+    <text x="450" y="118" class="brand-title">BHAVIK VASAVADA</text>
+  </g>
+
+  <!-- ==================== 4. HOLOGRAPHIC SCANNING BEAM ==================== -->
+  <g mask="url(#textClipMask)">
+    <!-- Sweeping Scanning Beam -->
+    <rect x="450" y="70" width="160" height="65" fill="url(#beamGradient)" class="scan-beam" />
+    <!-- ==================== 6. CONTINUOUS LIGHT MOVEMENT (LOOP) ==================== -->
+    <rect x="450" y="70" width="220" height="65" fill="url(#shimmerGradient)" class="continuous-shimmer" />
+  </g>
+
+  <!-- Horizontal Divider Line (Subtle Cyan Wave) -->
+  <g class="subtitle-fade">
+    <line x1="280" y1="145" x2="620" y2="145" stroke="#1E293B" stroke-width="1" />
+    <line x1="380" y1="145" x2="520" y2="145" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.6" />
+  </g>
+
+  <!-- ==================== 7. SUBTITLE FADE-IN ==================== -->
+  <g class="subtitle-fade">
+    <text x="450" y="174" class="brand-subtitle">Python Developer • M.Sc. Data Science @ Marwadi University</text>
+  </g>
+
+  <!-- Bottom Indicator Pill -->
+  <g class="subtitle-fade" transform="translate(450, 195)">
+    <circle cx="-135" cy="0" r="3.5" fill="#10B981" />
+    <circle cx="-135" cy="0" r="6" fill="#10B981" opacity="0.25" />
+    <text x="-122" y="3.5" font-family="ui-monospace, monospace" font-size="10.5" fill="#94A3B8" letter-spacing="1">
+      AUTONOMOUS SYSTEMS // MARWADI UNIVERSITY
+    </text>
+  </g>
+</svg>
