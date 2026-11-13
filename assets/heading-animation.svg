@@ -1,219 +1,354 @@
 <svg width="100%" height="440" viewBox="0 0 900 440" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Radial Gradient (Neural Data Lab) -->
-    <radialGradient id="labBg" cx="50%" cy="50%" r="75%">
-      <stop offset="0%" stop-color="#10223A" />
-      <stop offset="65%" stop-color="#081022" />
-      <stop offset="100%" stop-color="#050914" />
+    <!-- Base Deep Space Background Gradient -->
+    <linearGradient id="spaceBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030610" />
+      <stop offset="50%" stop-color="#060C1B" />
+      <stop offset="100%" stop-color="#02040A" />
+    </linearGradient>
+
+    <!-- Moving Nebula Glow 1 -->
+    <radialGradient id="nebulaGlow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0E3258" stop-opacity="0.75" />
+      <stop offset="60%" stop-color="#061A33" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#030610" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Neon Glow Filter for Nodes and Heading -->
-    <filter id="neonCyanGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <!-- Moving Nebula Glow 2 -->
+    <radialGradient id="nebulaGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E1B4B" stop-opacity="0.65" />
+      <stop offset="60%" stop-color="#0F172A" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#030610" stop-opacity="0" />
+    </radialGradient>
 
-    <filter id="titleDropShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#00BFFF" flood-opacity="0.65" />
+    <!-- Moving Nebula Glow 3 -->
+    <radialGradient id="nebulaGlow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0369A1" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#0284C7" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#030610" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Diagonal Moving Cyber Grid Pattern -->
+    <pattern id="slidingGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#162942" stroke-width="0.65" stroke-opacity="0.5" />
+    </pattern>
+
+    <!-- Pure White Clean Drop Shadow -->
+    <filter id="whiteCleanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#FFFFFF" flood-opacity="0.4" />
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#38BDF8" flood-opacity="0.25" />
     </filter>
 
     <filter id="terminalGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#00BFFF" flood-opacity="0.18" />
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00D9FF" flood-opacity="0.15" />
     </filter>
 
-    <!-- Flowing Title Gradient -->
-    <linearGradient id="colorFlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00E5FF" />
-      <stop offset="25%" stop-color="#FFFFFF" />
-      <stop offset="50%" stop-color="#8B5CF6" />
-      <stop offset="75%" stop-color="#00E5FF" />
-      <stop offset="100%" stop-color="#FFFFFF" />
-    </linearGradient>
-
-    <!-- Title Mask for Gradient Flow -->
-    <mask id="titleClipMask">
-      <text x="450" y="160" text-anchor="middle" class="headline-mask">BHAVIK VASAVADA</text>
-    </mask>
-
-    <!-- Sine Wave Training Boundary Pattern -->
-    <path id="sineUnit" d="M 0 350 Q 45 330, 90 350 T 180 350 T 270 350 T 360 350 T 450 350 T 540 350 T 630 350 T 720 350 T 810 350 T 900 350 T 990 350 T 1080 350" fill="none" stroke="rgba(139, 92, 246, 0.45)" stroke-width="1.8" />
+    <!-- Sine Wave Training Boundary Unit -->
+    <path id="sinePath" d="M 0 375 Q 45 358, 90 375 T 180 375 T 270 375 T 360 375 T 450 375 T 540 375 T 630 375 T 720 375 T 810 375 T 900 375 T 990 375 T 1080 375 T 1170 375 T 1260 375" fill="none" stroke="rgba(139, 92, 246, 0.45)" stroke-width="1.6" />
   </defs>
 
   <style>
     <![CDATA[
-    .mono-font { font-family: Consolas, 'Courier New', monospace; }
-    .headline-font { font-family: Arial, -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 900; font-size: 46px; letter-spacing: 3.5px; }
-    .headline-mask { font-family: Arial, -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 900; font-size: 46px; letter-spacing: 3.5px; fill: #FFFFFF; }
+    /* ==================== 1. FULL BACKGROUND MOVE ANIMATIONS ==================== */
+    .bg-nebula-1 {
+      animation: driftNebula1 16s ease-in-out infinite alternate;
+    }
+    .bg-nebula-2 {
+      animation: driftNebula2 20s ease-in-out infinite alternate;
+    }
+    .bg-nebula-3 {
+      animation: driftNebula3 14s ease-in-out infinite alternate;
+    }
 
-    /* Gradient Flow Animation */
-    .flow-rect { animation: colorFlow 5s linear infinite; }
-    @keyframes colorFlow { 0% { transform: translateX(-400px); } 100% { transform: translateX(400px); } }
+    @keyframes driftNebula1 {
+      0% { transform: translate(-80px, -40px) scale(0.9); }
+      50% { transform: translate(120px, 30px) scale(1.15); }
+      100% { transform: translate(-30px, 60px) scale(1); }
+    }
+    @keyframes driftNebula2 {
+      0% { transform: translate(100px, 50px) scale(1.1); }
+      50% { transform: translate(-90px, -30px) scale(0.95); }
+      100% { transform: translate(60px, -50px) scale(1.05); }
+    }
+    @keyframes driftNebula3 {
+      0% { transform: translate(0px, 30px); }
+      50% { transform: translate(-100px, -50px); }
+      100% { transform: translate(80px, -20px); }
+    }
 
-    /* Streaming Data Points */
-    .data-point-cyan { animation: streamLeftToRight 10s linear infinite; }
-    .data-point-purple { animation: streamLeftToRight 12s linear infinite; }
-    @keyframes streamLeftToRight { 0% { transform: translateX(-80px); opacity: 0; } 10% { opacity: 0.65; } 90% { opacity: 0.65; } 100% { transform: translateX(960px); opacity: 0; } }
+    /* Moving Grid Layer */
+    .bg-grid-layer {
+      animation: slideGrid 12s linear infinite;
+    }
+    @keyframes slideGrid {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-40px, -40px); }
+    }
 
-    /* Training Boundary Wave */
-    .training-wave { animation: waveFlow 7s linear infinite; }
-    @keyframes waveFlow { 0% { transform: translateX(0); } 100% { transform: translateX(-180px); } }
+    /* Background Constellation Drift */
+    .constellation-drift-left {
+      animation: driftFloat1 18s ease-in-out infinite alternate;
+    }
+    .constellation-drift-right {
+      animation: driftFloat2 15s ease-in-out infinite alternate;
+    }
+    @keyframes driftFloat1 {
+      0% { transform: translate(0px, 0px); }
+      50% { transform: translate(25px, -18px); }
+      100% { transform: translate(-15px, 20px); }
+    }
+    @keyframes driftFloat2 {
+      0% { transform: translate(0px, 0px); }
+      50% { transform: translate(-22px, 16px); }
+      100% { transform: translate(18px, -15px); }
+    }
 
-    /* Neural Nodes Pulse */
-    .node-pulse-1 { animation: nodePulse 3.5s ease-in-out infinite alternate; }
-    .node-pulse-2 { animation: nodePulse 4.2s ease-in-out infinite alternate 1s; }
-    .synapse-flicker-1 { animation: synapseFlicker 3s ease-in-out infinite alternate; }
-    .synapse-flicker-2 { animation: synapseFlicker 4s ease-in-out infinite alternate 0.7s; }
-    @keyframes nodePulse { 0% { opacity: 0.4; r: 2px; } 50% { opacity: 1; r: 3.2px; } 100% { opacity: 0.5; r: 2px; } }
-    @keyframes synapseFlicker { 0% { opacity: 0.15; } 50% { opacity: 0.45; } 100% { opacity: 0.15; } }
+    /* Flowing Training Boundary Wave */
+    .training-wave {
+      animation: flowSineWave 8s linear infinite;
+    }
+    @keyframes flowSineWave {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-180px); }
+    }
 
-    /* Terminal Commands Cycle */
-    .terminal-line { font-family: Consolas, 'Courier New', monospace; font-size: 11.5px; letter-spacing: 0.5px; }
-    .cmd-cursor { animation: cursorBlink 0.8s step-start infinite; }
-    @keyframes cursorBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    /* Streaming Data Particles Across Moving Background */
+    .data-stream-fast {
+      animation: streamDataFast 9s linear infinite;
+    }
+    .data-stream-slow {
+      animation: streamDataSlow 13s linear infinite;
+    }
+    @keyframes streamDataFast {
+      0% { transform: translateX(-100px); opacity: 0; }
+      12% { opacity: 0.7; }
+      88% { opacity: 0.7; }
+      100% { transform: translateX(960px); opacity: 0; }
+    }
+    @keyframes streamDataSlow {
+      0% { transform: translateX(-120px); opacity: 0; }
+      15% { opacity: 0.55; }
+      85% { opacity: 0.55; }
+      100% { transform: translateX(980px); opacity: 0; }
+    }
 
-    .cmd-step-1 { animation: cycleCmd1 15s infinite; }
-    .cmd-step-2 { animation: cycleCmd2 15s infinite; }
-    .cmd-step-3 { animation: cycleCmd3 15s infinite; }
-    .cmd-step-4 { animation: cycleCmd4 15s infinite; }
-    .cmd-step-5 { animation: cycleCmd5 15s infinite; }
-    .cmd-step-6 { animation: cycleCmd6 15s infinite; }
+    /* Node Pulses */
+    .node-pulse {
+      animation: pulseNode 3s ease-in-out infinite alternate;
+    }
+    @keyframes pulseNode {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
 
-    @keyframes cycleCmd1 { 0%, 14% { opacity: 1; } 16%, 100% { opacity: 0; } }
-    @keyframes cycleCmd2 { 0%, 15% { opacity: 0; } 17%, 31% { opacity: 1; } 33%, 100% { opacity: 0; } }
-    @keyframes cycleCmd3 { 0%, 32% { opacity: 0; } 34%, 48% { opacity: 1; } 50%, 100% { opacity: 0; } }
-    @keyframes cycleCmd4 { 0%, 49% { opacity: 0; } 51%, 65% { opacity: 1; } 67%, 100% { opacity: 0; } }
-    @keyframes cycleCmd5 { 0%, 66% { opacity: 0; } 68%, 82% { opacity: 1; } 84%, 100% { opacity: 0; } }
-    @keyframes cycleCmd6 { 0%, 83% { opacity: 0; } 85%, 98% { opacity: 1; } 100% { opacity: 0; } }
+    /* ==================== 2. PURE WHITE CLEAN TYPOGRAPHY ==================== */
+    .headline-pure-white {
+      font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 47px;
+      letter-spacing: 4px;
+      fill: #FFFFFF;
+      text-anchor: middle;
+    }
 
-    .eyebrow-text { font-family: Consolas, monospace; font-size: 11px; letter-spacing: 4px; fill: #00E5FF; text-anchor: middle; opacity: 0.9; }
-    .subtitle-text { font-family: Consolas, monospace; font-size: 13px; letter-spacing: 2px; fill: #A9C8DF; text-anchor: middle; }
-    .bottom-tag { font-family: Consolas, monospace; font-size: 10px; letter-spacing: 3px; fill: #00D9FF; text-anchor: middle; opacity: 0.85; }
+    .eyebrow-text {
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 4px;
+      fill: #00E5FF;
+      text-anchor: middle;
+      opacity: 0.9;
+    }
+    .subtitle-text {
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 13.5px;
+      letter-spacing: 2.2px;
+      fill: #A9C8DF;
+      text-anchor: middle;
+    }
+    .bottom-tag {
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 3.5px;
+      fill: #00D9FF;
+      text-anchor: middle;
+      opacity: 0.85;
+    }
+
+    /* ==================== 3. LIVE TERMINAL CYCLING ==================== */
+    .terminal-line {
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 11.5px;
+      letter-spacing: 0.5px;
+    }
+    .cursor-blink {
+      animation: blinkCursor 0.8s step-start infinite;
+    }
+    @keyframes blinkCursor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .cmd-cycle-1 { animation: cycleCommand1 15s infinite; }
+    .cmd-cycle-2 { animation: cycleCommand2 15s infinite; }
+    .cmd-cycle-3 { animation: cycleCommand3 15s infinite; }
+    .cmd-cycle-4 { animation: cycleCommand4 15s infinite; }
+    .cmd-cycle-5 { animation: cycleCommand5 15s infinite; }
+    .cmd-cycle-6 { animation: cycleCommand6 15s infinite; }
+
+    @keyframes cycleCommand1 { 0%, 14% { opacity: 1; } 16%, 100% { opacity: 0; } }
+    @keyframes cycleCommand2 { 0%, 15% { opacity: 0; } 17%, 31% { opacity: 1; } 33%, 100% { opacity: 0; } }
+    @keyframes cycleCommand3 { 0%, 32% { opacity: 0; } 34%, 48% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes cycleCommand4 { 0%, 49% { opacity: 0; } 51%, 65% { opacity: 1; } 67%, 100% { opacity: 0; } }
+    @keyframes cycleCommand5 { 0%, 66% { opacity: 0; } 68%, 82% { opacity: 1; } 84%, 100% { opacity: 0; } }
+    @keyframes cycleCommand6 { 0%, 83% { opacity: 0; } 85%, 98% { opacity: 1; } 100% { opacity: 0; } }
     ]]>
   </style>
 
-  <!-- Container Background -->
-  <rect x="1" y="1" width="898" height="438" rx="14" fill="url(#labBg)" stroke="#173D58" stroke-width="1.2" />
+  <!-- Container Base -->
+  <rect x="1" y="1" width="898" height="438" rx="14" fill="url(#spaceBase)" stroke="#173D58" stroke-width="1.2" />
 
-  <!-- Background Synapse Network (Left) -->
-  <g class="synapse-flicker-1" stroke="rgba(0, 190, 255, 0.35)" stroke-width="0.75">
-    <line x1="80" y1="90" x2="160" y2="60" />
-    <line x1="160" y1="60" x2="220" y2="120" />
-    <line x1="160" y1="60" x2="190" y2="180" />
-    <line x1="220" y1="120" x2="190" y2="180" />
-    <line x1="80" y1="90" x2="110" y2="210" />
-    <line x1="110" y1="210" x2="190" y2="180" />
-    <line x1="110" y1="210" x2="60" y2="300" />
-    <line x1="190" y1="180" x2="140" y2="320" />
-    <line x1="60" y1="300" x2="140" y2="320" />
-    <line x1="140" y1="320" x2="240" y2="280" />
-    <line x1="190" y1="180" x2="240" y2="280" />
-  </g>
-  <g fill="#00D9FF" filter="url(#neonCyanGlow)">
-    <circle cx="80" cy="90" r="2.5" class="node-pulse-1" />
-    <circle cx="160" cy="60" r="3" class="node-pulse-2" />
-    <circle cx="220" cy="120" r="2" class="node-pulse-1" />
-    <circle cx="190" cy="180" r="3.2" class="node-pulse-2" />
-    <circle cx="110" cy="210" r="2.5" class="node-pulse-1" />
-    <circle cx="60" cy="300" r="2" class="node-pulse-2" />
-    <circle cx="140" cy="320" r="2.5" class="node-pulse-1" />
-    <circle cx="240" cy="280" r="3" class="node-pulse-2" />
+  <!-- ==================== MOVING BACKGROUND LAYER ==================== -->
+  <g opacity="0.9">
+    <!-- Moving Nebula 1 (Deep Blue Center) -->
+    <g class="bg-nebula-1">
+      <circle cx="360" cy="180" r="280" fill="url(#nebulaGlow1)" />
+    </g>
+
+    <!-- Moving Nebula 2 (Deep Violet-Slate) -->
+    <g class="bg-nebula-2">
+      <circle cx="580" cy="240" r="300" fill="url(#nebulaGlow2)" />
+    </g>
+
+    <!-- Moving Nebula 3 (Electric Cyan Horizon) -->
+    <g class="bg-nebula-3">
+      <circle cx="450" cy="360" r="240" fill="url(#nebulaGlow3)" />
+    </g>
   </g>
 
-  <!-- Background Synapse Network (Right) -->
-  <g class="synapse-flicker-2" stroke="rgba(0, 190, 255, 0.35)" stroke-width="0.75">
-    <line x1="820" y1="80" x2="740" y2="60" />
-    <line x1="740" y1="60" x2="680" y2="130" />
-    <line x1="740" y1="60" x2="720" y2="190" />
-    <line x1="680" y1="130" x2="720" y2="190" />
-    <line x1="820" y1="80" x2="790" y2="220" />
-    <line x1="720" y1="190" x2="790" y2="220" />
-    <line x1="790" y1="220" x2="840" y2="310" />
-    <line x1="720" y1="190" x2="750" y2="330" />
-    <line x1="750" y1="330" x2="840" y2="310" />
-    <line x1="680" y1="130" x2="650" y2="270" />
-    <line x1="650" y1="270" x2="750" y2="330" />
-  </g>
-  <g fill="#00D9FF" filter="url(#neonCyanGlow)">
-    <circle cx="820" cy="80" r="2.5" class="node-pulse-2" />
-    <circle cx="740" cy="60" r="3" class="node-pulse-1" />
-    <circle cx="680" cy="130" r="2" class="node-pulse-2" />
-    <circle cx="720" cy="190" r="3.2" class="node-pulse-1" />
-    <circle cx="790" cy="220" r="2.5" class="node-pulse-2" />
-    <circle cx="840" cy="310" r="2" class="node-pulse-1" />
-    <circle cx="750" cy="330" r="2.5" class="node-pulse-2" />
-    <circle cx="650" cy="270" r="3" class="node-pulse-1" />
+  <!-- Sliding Cyber Grid Pattern Layer -->
+  <g class="bg-grid-layer" opacity="0.65">
+    <rect x="-40" y="-40" width="980" height="520" fill="url(#slidingGrid)" />
   </g>
 
-  <!-- Data Streaming Particles -->
-  <g class="data-point-cyan">
-    <circle cx="40" cy="80" r="2" fill="#00E5FF" />
-    <circle cx="180" cy="230" r="2" fill="#00E5FF" />
-    <circle cx="320" cy="70" r="1.8" fill="#00E5FF" />
-    <circle cx="580" cy="260" r="2" fill="#00E5FF" />
-    <circle cx="720" cy="110" r="2.2" fill="#00E5FF" />
-    <circle cx="840" cy="240" r="1.8" fill="#00E5FF" />
-  </g>
-  <g class="data-point-purple">
-    <circle cx="90" cy="140" r="2" fill="#A78BFA" />
-    <circle cx="260" cy="280" r="2.2" fill="#A78BFA" />
-    <circle cx="480" cy="75" r="1.8" fill="#A78BFA" />
-    <circle cx="640" cy="170" r="2" fill="#A78BFA" />
-    <circle cx="780" cy="290" r="2" fill="#A78BFA" />
+  <!-- Drifting Neural Constellations in Background -->
+  <!-- Constellation Left -->
+  <g class="constellation-drift-left">
+    <g stroke="rgba(0, 190, 255, 0.3)" stroke-width="0.7">
+      <line x1="80" y1="90" x2="160" y2="60" />
+      <line x1="160" y1="60" x2="220" y2="120" />
+      <line x1="160" y1="60" x2="190" y2="180" />
+      <line x1="220" y1="120" x2="190" y2="180" />
+      <line x1="80" y1="90" x2="110" y2="210" />
+      <line x1="110" y1="210" x2="190" y2="180" />
+      <line x1="110" y1="210" x2="60" y2="300" />
+      <line x1="190" y1="180" x2="140" y2="320" />
+      <line x1="60" y1="300" x2="140" y2="320" />
+      <line x1="140" y1="320" x2="240" y2="280" />
+      <line x1="190" y1="180" x2="240" y2="280" />
+    </g>
+    <g fill="#00D9FF" class="node-pulse">
+      <circle cx="80" cy="90" r="2.5" />
+      <circle cx="160" cy="60" r="3" />
+      <circle cx="220" cy="120" r="2" />
+      <circle cx="190" cy="180" r="3.2" />
+      <circle cx="110" cy="210" r="2.5" />
+      <circle cx="60" cy="300" r="2" />
+      <circle cx="140" cy="320" r="2.5" />
+      <circle cx="240" cy="280" r="3" />
+    </g>
   </g>
 
-  <!-- Classification Wave -->
+  <!-- Constellation Right -->
+  <g class="constellation-drift-right">
+    <g stroke="rgba(0, 190, 255, 0.3)" stroke-width="0.7">
+      <line x1="820" y1="80" x2="740" y2="60" />
+      <line x1="740" y1="60" x2="680" y2="130" />
+      <line x1="740" y1="60" x2="720" y2="190" />
+      <line x1="680" y1="130" x2="720" y2="190" />
+      <line x1="820" y1="80" x2="790" y2="220" />
+      <line x1="720" y1="190" x2="790" y2="220" />
+      <line x1="790" y1="220" x2="840" y2="310" />
+      <line x1="720" y1="190" x2="750" y2="330" />
+      <line x1="750" y1="330" x2="840" y2="310" />
+      <line x1="680" y1="130" x2="650" y2="270" />
+      <line x1="650" y1="270" x2="750" y2="330" />
+    </g>
+    <g fill="#00D9FF" class="node-pulse">
+      <circle cx="820" cy="80" r="2.5" />
+      <circle cx="740" cy="60" r="3" />
+      <circle cx="680" cy="130" r="2" />
+      <circle cx="720" cy="190" r="3.2" />
+      <circle cx="790" cy="220" r="2.5" />
+      <circle cx="840" cy="310" r="2" />
+      <circle cx="750" cy="330" r="2.5" />
+      <circle cx="650" cy="270" r="3" />
+    </g>
+  </g>
+
+  <!-- Streaming Data Particles Layer -->
+  <g class="data-stream-fast">
+    <circle cx="50" cy="75" r="2" fill="#00E5FF" />
+    <circle cx="190" cy="225" r="2.2" fill="#00E5FF" />
+    <circle cx="340" cy="65" r="1.8" fill="#00E5FF" />
+    <circle cx="590" cy="255" r="2" fill="#00E5FF" />
+    <circle cx="730" cy="105" r="2.2" fill="#00E5FF" />
+    <circle cx="850" cy="235" r="1.8" fill="#00E5FF" />
+  </g>
+  <g class="data-stream-slow">
+    <circle cx="100" cy="135" r="2" fill="#A78BFA" />
+    <circle cx="270" cy="275" r="2" fill="#A78BFA" />
+    <circle cx="490" cy="70" r="1.8" fill="#A78BFA" />
+    <circle cx="650" cy="165" r="2" fill="#A78BFA" />
+    <circle cx="790" cy="285" r="2" fill="#A78BFA" />
+  </g>
+
+  <!-- Flowing Training Wave across bottom -->
   <g class="training-wave">
-    <path d="M 0 375 Q 45 355, 90 375 T 180 375 T 270 375 T 360 375 T 450 375 T 540 375 T 630 375 T 720 375 T 810 375 T 900 375 T 990 375 T 1080 375" fill="none" stroke="rgba(139, 92, 246, 0.45)" stroke-width="1.8" />
-    <path d="M 180 375 Q 225 355, 270 375 T 360 375 T 450 375 T 540 375 T 630 375 T 720 375 T 810 375 T 900 375 T 990 375 T 1080 375 T 1170 375 T 1260 375" fill="none" stroke="rgba(139, 92, 246, 0.45)" stroke-width="1.8" />
+    <use href="#sinePath" x="0" y="0" />
+    <use href="#sinePath" x="180" y="0" />
   </g>
 
-  <!-- Foreground Content -->
+  <!-- ==================== FOREGROUND CONTENT ==================== -->
   <!-- 1. Eyebrow -->
   <text x="450" y="88" class="eyebrow-text">[ INITIALIZING NEURAL DATA LAB ]</text>
 
-  <!-- 2. Headline with Flowing Gradient & Drop Shadow -->
-  <g filter="url(#titleDropShadow)">
-    <text x="450" y="160" text-anchor="middle" class="headline-font" fill="#00E5FF" opacity="0.15">
-      BHAVIK VASAVADA
-    </text>
-    <g mask="url(#titleClipMask)">
-      <rect x="0" y="100" width="1300" height="80" fill="url(#colorFlowGrad)" class="flow-rect" />
-    </g>
-  </g>
+  <!-- 2. Headline: PURE WHITE (NO COLORING) WITH CLEAN GLOW -->
+  <text x="450" y="160" class="headline-pure-white" filter="url(#whiteCleanGlow)">
+    BHAVIK VASAVADA
+  </text>
 
   <!-- 3. Subtitle -->
   <text x="450" y="198" class="subtitle-text">
     PYTHON DEVELOPER · DATA SCIENCE · AI/ML
   </text>
 
-  <!-- 4. Live Python Terminal -->
+  <!-- 4. Live Python Terminal Box -->
   <g transform="translate(450, 240)">
-    <rect x="-195" y="0" width="390" height="74" rx="7" fill="#06101D" fill-opacity="0.9" stroke="#00D9FF" stroke-opacity="0.4" stroke-width="1.2" filter="url(#terminalGlow)" />
+    <rect x="-195" y="0" width="390" height="74" rx="7" fill="#06101D" fill-opacity="0.92" stroke="#00D9FF" stroke-opacity="0.45" stroke-width="1.2" filter="url(#terminalGlow)" />
     <circle cx="-176" cy="20" r="3.5" fill="#00D9FF" />
     <text x="-164" y="24" class="mono-font" font-size="11" font-weight="700" fill="#00D9FF" letter-spacing="0.8">
       LIVE PYTHON TERMINAL
     </text>
 
-    <g class="cmd-step-1">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#B9E7FF">import pandas as pd</tspan><tspan fill="#00D9FF" class="cmd-cursor"> █</tspan></text>
+    <!-- Cycling Commands -->
+    <g class="cmd-cycle-1">
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">import pandas as pd</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
-    <g class="cmd-step-2">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#B9E7FF">data = pd.read_csv('dataset.csv')</tspan><tspan fill="#00D9FF" class="cmd-cursor"> █</tspan></text>
+    <g class="cmd-cycle-2">
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">data = pd.read_csv('dataset.csv')</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
-    <g class="cmd-step-3">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#B9E7FF">data.dropna(inplace=True)</tspan><tspan fill="#00D9FF" class="cmd-cursor"> █</tspan></text>
+    <g class="cmd-cycle-3">
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">data.dropna(inplace=True)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
-    <g class="cmd-step-4">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#B9E7FF">model.fit(X_train, y_train)</tspan><tspan fill="#00D9FF" class="cmd-cursor"> █</tspan></text>
+    <g class="cmd-cycle-4">
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">model.fit(X_train, y_train)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
-    <g class="cmd-step-5">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#B9E7FF">prediction = model.predict(X_test)</tspan><tspan fill="#00D9FF" class="cmd-cursor"> █</tspan></text>
+    <g class="cmd-cycle-5">
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">prediction = model.predict(X_test)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
-    <g class="cmd-step-6">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#B9E7FF">print('Model ready!')</tspan><tspan fill="#00D9FF" class="cmd-cursor"> █</tspan></text>
+    <g class="cmd-cycle-6">
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">print('Model ready!')</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
   </g>
 
