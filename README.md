@@ -1,12 +1,21 @@
 <div align="center">
 
-  <!-- Interactive Terminal HUD Header with Cyber Light Sweep & Node Telemetry -->
-  <img src="assets/hero.svg" width="100%" alt="Bhavik Vasavada - Terminal Profile Header" />
+  <!-- ==================== ANIMATED HERO HEADER ==================== -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:07090E,40:0B1324,80:0284C7,100:38BDF8&height=220&section=header&text=Bhavik%20Vasavada&fontSize=48&fontAlignY=36&desc=Python%20Developer%20%E2%80%A2%20M.Sc.%20Data%20Science%20%40%20Marwadi%20University&descFontSize=17&descAlignY=60&fontColor=F8FAFC&animation=fadeIn" width="100%" alt="Bhavik Vasavada Animated Header" />
+
+  <!-- ==================== LIVE TYPING SVG ANIMATION ==================== -->
+  <a href="https://github.com/bhavikmv">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&height=50&lines=%24+python+-m+engineer+--focus+%22Backend+%26+Data+Science%22;M.Sc.+Data+Science+Scholar+%40+Marwadi+University;Python+Backend+Developer+%7C+Django%2C+Flask+%26+REST+APIs;PostgreSQL+%26+MySQL+Relational+Architecture;BCA+Graduate+(2023%E2%80%932026)+%7C+Sahajanand+College;Active+Projects%3A+TourMS%2C+Phonora+%26+GadgetMS" alt="Live Typing Animation" />
+  </a>
 
   <br/><br/>
 
-  <!-- System Architecture & Live Data Flow Animation -->
-  <img src="assets/pipeline.svg" width="100%" alt="System Architecture and Data Pipeline" />
+  <!-- Status Indicator Strip -->
+  <p align="center">
+    <a href="https://github.com/bhavikmv"><img src="https://img.shields.io/badge/STATUS-ACTIVE%20BUILDING-38BDF8?style=flat-square&logo=git&logoColor=07090E&labelColor=07090E" alt="Status" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/bhavikmv"><img src="https://img.shields.io/badge/FOCUS-M.SC%20DATA%20SCIENCE-818CF8?style=flat-square&logo=databricks&logoColor=white&labelColor=07090E" alt="Focus" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/bhavikmv"><img src="https://img.shields.io/badge/UNIVERSITY-MARWADI%20UNIVERSITY-38BDF8?style=flat-square&logo=googleclassroom&logoColor=07090E&labelColor=07090E" alt="University" /></a>
+  </p>
 
 </div>
 
@@ -16,42 +25,35 @@
 
 ### About
 
-I am a Python developer and postgraduate student currently pursuing my **M.Sc. in Data Science at Marwadi University**, having previously completed my **Bachelor of Computer Applications (BCA)** at Sahajanand College of IT & Management, Gondal (2023–2026).
+I am a Python backend developer and postgraduate student currently pursuing an **M.Sc. in Data Science at Marwadi University**, having previously earned a **Bachelor of Computer Applications (BCA)** from Sahajanand College of IT & Management, Gondal (2023–2026).
 
-My technical work focuses on building clean, structured web services and data-centric backend platforms. With **Python, Django, Flask**, and relational database engines like **PostgreSQL** and **MySQL**, I design schema architectures, secure RESTful APIs, and transaction-safe workflows. In parallel, my academic training in data science centers on statistical analysis, data cleaning pipelines, and predictive algorithms using **NumPy, Pandas, and Scikit-Learn**.
+My technical work centers on building reliable web backends, designing relational schemas, and developing data pipelines. On the application layer, I write clean services with **Python, Django, and Flask**, connecting to **PostgreSQL** and **MySQL** databases through well-defined RESTful endpoints. On the analytical layer, I work with **NumPy, Pandas, and Scikit-Learn** for statistical data processing, feature exploration, and predictive modeling.
 
-I prioritize writing code that is clean, readable, and predictable. Rather than adding unnecessary abstraction, I focus on understanding data flows, optimizing database interactions, and developing dependable software that addresses real business and administrative requirements.
+I focus on writing readable, testable, and maintainable software that solves concrete workflow problems rather than introducing unnecessary architectural overhead.
 
 <br/>
 
 ---
 
-### Core Competencies & Technical Pillars
+### Technical Competencies
 
-<div align="center">
-  <!-- Dynamic 4-Pillar Competencies Dashboard -->
-  <img src="assets/stats-card.svg" width="100%" alt="Core Technical Pillars Dashboard" />
-</div>
+#### Backend Engineering
+Python, Django, Django REST Framework, Flask, REST API Architecture, Session & Token Authentication
 
-<br/>
-
-#### Backend & Architecture
-Python, Django, Django REST Framework, Flask, RESTful API Engineering, Role-Based Access Control
-
-#### Relational Databases & Storage
-PostgreSQL, MySQL, Relational Schema Modeling, Query Optimization, Transactional Integrity (ACID)
+#### Database & Storage
+PostgreSQL, MySQL, Relational Schema Design, Query Optimization, Transaction Management (ACID)
 
 #### Data Science Fundamentals
-NumPy, Pandas, Scikit-Learn, Exploratory Data Analysis, Data Wrangling, Statistical Feature Engineering
+NumPy, Pandas, Scikit-Learn, Exploratory Data Analysis, Data Cleaning, Statistical Feature Engineering
 
-#### Tooling & Environment
+#### Developer Tooling
 Git, GitHub, VS Code, Postman, Linux / Bash, Jupyter Notebook
 
 <br/>
 
 ---
 
-### Active Engineering Projects
+### Active Projects
 
 <table>
   <thead>
@@ -66,7 +68,7 @@ Git, GitHub, VS Code, Postman, Linux / Bash, Jupyter Notebook
     <tr>
       <td>
         <b>Tour Management System</b><br/>
-        <sub>Full-Stack Tour Booking &amp; Reservation Platform</sub>
+        <sub>Enterprise Travel &amp; Reservation Platform</sub>
       </td>
       <td>
         Built a centralized reservation engine handling customer bookings, trip schedules, and dispatch operations. Utilizes Django REST Framework endpoints for decoupled client integration, secure authentication, and relational schema migrations in PostgreSQL.
@@ -131,7 +133,7 @@ Git, GitHub, VS Code, Postman, Linux / Bash, Jupyter Notebook
 
 - **Bachelor of Computer Applications (BCA)**
   *Sahajanand College of IT & Management, Gondal* | 2023 – 2026
-  Rigorous training in software engineering methodologies, database management systems (DBMS), data structures, and computer programming.
+  Core training in software engineering methodologies, database management systems (DBMS), data structures, and computer programming.
 
 <br/>
 
@@ -140,7 +142,7 @@ Git, GitHub, VS Code, Postman, Linux / Bash, Jupyter Notebook
 ### GitHub Activity & Consistency
 
 <div align="center">
-  <!-- Consistent GitHub Streak Stats -->
+  <!-- Live Animated Streak Counter with Glowing Ring and Flame -->
   <a href="https://github.com/bhavikmv">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=bhavikmv&theme=dark&background=07090E&border=1E293B&stroke=1E293B&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=94A3B8&sideNums=F1F5F9&currStreakNum=F8FAFC" height="195" alt="GitHub Streak Stats" />
   </a>
@@ -150,66 +152,33 @@ Git, GitHub, VS Code, Postman, Linux / Bash, Jupyter Notebook
 
 ---
 
-### Contribution Snake
+### Connect & Collaborate
 
 <div align="center">
-  <!-- Contribution Snake Grid (Automated via .github/workflows/snake.yml) -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhavikmv/bhavikmv/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhavikmv/bhavikmv/output/github-contribution-grid-snake.svg">
-    <img alt="Contribution Grid Snake" src="https://raw.githubusercontent.com/bhavikmv/bhavikmv/output/github-contribution-grid-snake-dark.svg" width="95%" />
-  </picture>
+
+  <p>Feel free to reach out for backend development, data science discussions, or collaborative projects.</p>
+
+  <!-- Animated Typing Interaction Prompt -->
+  <a href="mailto:bhavikmv5@gmail.com">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=38BDF8&center=true&vCenter=true&width=620&height=36&lines=Let's+build+something+impactful+together;Open+for+collaborations+%26+internships;Reach+out+via+email+or+LinkedIn" alt="Contact Typing Animation" />
+  </a>
+
+  <br/><br/>
+
+  <!-- Clean, Simple, Modern Contact Pills -->
+  <p align="center">
+    <a href="mailto:bhavikmv5@gmail.com"><img src="https://img.shields.io/badge/Email-bhavikmv5%40gmail.com-0B1120?style=flat-square&logo=gmail&logoColor=38BDF8&labelColor=07090E" alt="Direct Mail" /></a>&nbsp;&nbsp;
+    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0B1120?style=flat-square&logo=linkedin&logoColor=38BDF8&labelColor=07090E" alt="LinkedIn" /></a>&nbsp;&nbsp;
+    <a href="https://github.com/bhavikmv" target="_blank"><img src="https://img.shields.io/badge/GitHub-Follow-0B1120?style=flat-square&logo=github&logoColor=F8FAFC&labelColor=07090E" alt="GitHub" /></a>&nbsp;&nbsp;
+    <a href="https://YOUR_PORTFOLIO_URL" target="_blank"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-0B1120?style=flat-square&logo=safari&logoColor=38BDF8&labelColor=07090E" alt="Portfolio" /></a>
+  </p>
+
   <br/>
-  <sub>Generated automatically via GitHub Actions on the <code>output</code> branch</sub>
-</div>
 
-<br/>
+  <!-- Animated Footer Wave -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:07090E,40:0B1324,80:0284C7,100:38BDF8&height=90&section=footer" width="100%" alt="Footer Wave Animation" />
 
----
-
-### Communication & Connection Console
-
-```bash
-# Terminal Connection Interface
-$ ssh -v connect@bhavik.dev --channels="email,linkedin,github,portfolio"
-```
-
-<div align="center">
-  <!-- Interactive 4-Channel SVG Communication Station -->
-  <img src="assets/connect-station.svg" width="100%" alt="Interactive Communication Console" />
-</div>
-
-<br/>
-
-<div align="center">
-  <table border="0" cellpadding="8" cellspacing="0">
-    <tr>
-      <td align="center">
-        <a href="mailto:bhavikmv5@gmail.com">
-          <img src="https://img.shields.io/badge/Direct_Mail-bhavikmv5%40gmail.com-0B1120?style=flat-square&logo=gmail&logoColor=38BDF8&labelColor=07090E" alt="Direct Mail" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank">
-          <img src="https://img.shields.io/badge/Network-LinkedIn_Profile-0B1120?style=flat-square&logo=linkedin&logoColor=38BDF8&labelColor=07090E" alt="LinkedIn" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/bhavikmv" target="_blank">
-          <img src="https://img.shields.io/badge/Source-GitHub_bhavikmv-0B1120?style=flat-square&logo=github&logoColor=F8FAFC&labelColor=07090E" alt="GitHub" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://YOUR_PORTFOLIO_URL" target="_blank">
-          <img src="https://img.shields.io/badge/Web-Live_Portfolio-0B1120?style=flat-square&logo=safari&logoColor=38BDF8&labelColor=07090E" alt="Portfolio" />
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br/>
-
-<div align="center">
+  <br/>
   <sub>Bhavik Vasavada · Python Developer &amp; Postgraduate Data Science Scholar · Marwadi University</sub>
+
 </div>
