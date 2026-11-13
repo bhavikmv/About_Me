@@ -3,9 +3,9 @@
   <!-- NEURAL DATA LAB -->
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.svg"
+    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.svg?v=2"
     width="100%"
-    alt="Bhavik Vasavada - Neural Data Lab"
+    alt="Bhavik Vasavada"
   />
 </div>
 
