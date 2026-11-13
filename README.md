@@ -1,5 +1,7 @@
 
 <div align="center">
+
+<div align="center">
   <img
     src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.gif"
     width="100%"
