@@ -1,0 +1,132 @@
+<svg width="100%" height="150" viewBox="0 0 900 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090E" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Pulse Line Gradient -->
+    <linearGradient id="busGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .node-box {
+      fill: #0C1322;
+      stroke: #1E293B;
+      stroke-width: 1.2;
+      rx: 8px;
+    }
+    .node-header {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      fill: #38BDF8;
+      text-transform: uppercase;
+    }
+    .node-body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #F1F5F9;
+    }
+    .node-sub {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 10.5px;
+      fill: #94A3B8;
+    }
+    .pipe-line {
+      stroke: #1E293B;
+      stroke-width: 2;
+      stroke-dasharray: 4 4;
+    }
+
+    /* Unique Glowing Pulse Travel Animations */
+    .pulse-packet-1 {
+      animation: movePacket1 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .pulse-packet-2 {
+      animation: movePacket2 3s cubic-bezier(0.4, 0, 0.2, 1) 0.8s infinite;
+    }
+    .pulse-packet-3 {
+      animation: movePacket3 3s cubic-bezier(0.4, 0, 0.2, 1) 1.6s infinite;
+    }
+
+    @keyframes movePacket1 {
+      0% { cx: 195; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { cx: 275; opacity: 0; }
+    }
+    @keyframes movePacket2 {
+      0% { cx: 445; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { cx: 525; opacity: 0; }
+    }
+    @keyframes movePacket3 {
+      0% { cx: 695; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { cx: 775; opacity: 0; }
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="898" height="148" rx="10" fill="url(#pipeBg)" stroke="#1E293B" stroke-width="1.2" />
+
+  <!-- Section Label -->
+  <text x="30" y="24" class="node-header" fill="#64748B">ARCHITECTURE // DATA FLOW &amp; ENGINE BUS</text>
+
+  <!-- ==================== NODE 1: CLIENT / UI ==================== -->
+  <g transform="translate(30, 42)">
+    <rect width="165" height="85" class="node-box" />
+    <circle cx="20" cy="22" r="3.5" fill="#38BDF8" />
+    <text x="32" y="26" class="node-header">FRONTEND / CLIENT</text>
+    <text x="16" y="52" class="node-body">Web Interfaces</text>
+    <text x="16" y="70" class="node-sub">HTML5, CSS3, JS, PHP</text>
+  </g>
+
+  <!-- Bus Line 1 -->
+  <line x1="195" y1="84" x2="275" y2="84" class="pipe-line" />
+  <circle cx="195" cy="84" r="3.5" fill="#38BDF8" class="pulse-packet-1" />
+
+  <!-- ==================== NODE 2: BACKEND ENGINE ==================== -->
+  <g transform="translate(275, 42)">
+    <rect width="170" height="85" class="node-box" />
+    <circle cx="20" cy="22" r="3.5" fill="#818CF8" />
+    <text x="32" y="26" class="node-header">SERVICE LOGIC</text>
+    <text x="16" y="52" class="node-body">Django &amp; Flask</text>
+    <text x="16" y="70" class="node-sub">REST APIs, Auth, ORM</text>
+  </g>
+
+  <!-- Bus Line 2 -->
+  <line x1="445" y1="84" x2="525" y2="84" class="pipe-line" />
+  <circle cx="445" cy="84" r="3.5" fill="#818CF8" class="pulse-packet-2" />
+
+  <!-- ==================== NODE 3: DATA PERSISTENCE ==================== -->
+  <g transform="translate(525, 42)">
+    <rect width="170" height="85" class="node-box" />
+    <circle cx="20" cy="22" r="3.5" fill="#38BDF8" />
+    <text x="32" y="26" class="node-header">PERSISTENCE</text>
+    <text x="16" y="52" class="node-body">PostgreSQL &amp; MySQL</text>
+    <text x="16" y="70" class="node-sub">Schema Design, ACID</text>
+  </g>
+
+  <!-- Bus Line 3 -->
+  <line x1="695" y1="84" x2="775" y2="84" class="pipe-line" />
+  <circle cx="695" cy="84" r="3.5" fill="#34D399" class="pulse-packet-3" />
+
+  <!-- ==================== NODE 4: DATA SCIENCE ==================== -->
+  <g transform="translate(775, 42)">
+    <rect width="95" height="85" class="node-box" />
+    <circle cx="20" cy="22" r="3.5" fill="#34D399" />
+    <text x="32" y="26" class="node-header">ANALYTICS</text>
+    <text x="14" y="52" class="node-body">M.Sc. DS</text>
+    <text x="14" y="70" class="node-sub">Pandas, ML</text>
+  </g>
+</svg>

@@ -1,0 +1,136 @@
+<svg width="100%" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="commBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090E" />
+      <stop offset="100%" stop-color="#0B1324" />
+    </linearGradient>
+
+    <linearGradient id="commBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <!-- Radar Pulse Wave -->
+    <radialGradient id="radarPulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .channel-box {
+      fill: #0B1120;
+      stroke: #1E293B;
+      stroke-width: 1.2;
+      rx: 8px;
+      transition: all 0.3s ease;
+    }
+    .channel-box:hover {
+      fill: #0F172A;
+      stroke: #38BDF8;
+    }
+    .channel-num {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      fill: #64748B;
+    }
+    .channel-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      fill: #F8FAFC;
+    }
+    .channel-meta {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      fill: #38BDF8;
+    }
+    .channel-status {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 10px;
+      fill: #10B981;
+    }
+    .comm-signal {
+      animation: signalBlink 2.2s ease-in-out infinite;
+    }
+    .radar-sweep {
+      animation: radarScan 4s linear infinite;
+      transform-origin: 850px 24px;
+    }
+
+    @keyframes signalBlink {
+      0%, 100% { opacity: 0.35; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+    @keyframes radarScan {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="898" height="218" rx="10" fill="url(#commBg)" stroke="url(#commBorder)" stroke-width="1.2" />
+
+  <!-- Console Header -->
+  <text x="30" y="28" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5" fill="#64748B">
+    COMMUNICATION HUB // OPEN PROTOCOL
+  </text>
+  <circle cx="830" cy="24" r="4.5" fill="#10B981" class="comm-signal" />
+  <text x="842" y="28" font-family="ui-monospace, monospace" font-size="10.5" fill="#10B981">LIVE</text>
+
+  <!-- 4 Interactive Transmission Channel Cards -->
+  <!-- 01: Direct Email -->
+  <a href="mailto:bhavikmv5@gmail.com" target="_blank">
+    <g transform="translate(30, 48)">
+      <rect width="195" height="145" class="channel-box" />
+      <text x="16" y="28" class="channel-num">CHANNEL 01</text>
+      <text x="16" y="52" class="channel-title">Direct Mail</text>
+      <text x="16" y="74" class="channel-meta">bhavikmv5@gmail.com</text>
+      <line x1="16" y1="95" x2="179" y2="95" stroke="#1E293B" stroke-width="1" />
+      <circle cx="24" cy="118" r="3.5" fill="#10B981" />
+      <text x="36" y="122" class="channel-status">Latency: Fast</text>
+    </g>
+  </a>
+
+  <!-- 02: LinkedIn -->
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank">
+    <g transform="translate(245, 48)">
+      <rect width="195" height="145" class="channel-box" />
+      <text x="16" y="28" class="channel-num">CHANNEL 02</text>
+      <text x="16" y="52" class="channel-title">LinkedIn Network</text>
+      <text x="16" y="74" class="channel-meta">Professional Profile</text>
+      <line x1="16" y1="95" x2="179" y2="95" stroke="#1E293B" stroke-width="1" />
+      <circle cx="24" cy="118" r="3.5" fill="#38BDF8" />
+      <text x="36" y="122" class="channel-status" fill="#38BDF8">Handshake: Ready</text>
+    </g>
+  </a>
+
+  <!-- 03: GitHub -->
+  <a href="https://github.com/bhavikmv" target="_blank">
+    <g transform="translate(460, 48)">
+      <rect width="195" height="145" class="channel-box" />
+      <text x="16" y="28" class="channel-num">CHANNEL 03</text>
+      <text x="16" y="52" class="channel-title">Code Repositories</text>
+      <text x="16" y="74" class="channel-meta">github.com/bhavikmv</text>
+      <line x1="16" y1="95" x2="179" y2="95" stroke="#1E293B" stroke-width="1" />
+      <circle cx="24" cy="118" r="3.5" fill="#A855F7" />
+      <text x="36" y="122" class="channel-status" fill="#A855F7">Git Sync: Active</text>
+    </g>
+  </a>
+
+  <!-- 04: Portfolio -->
+  <a href="https://YOUR_PORTFOLIO_URL" target="_blank">
+    <g transform="translate(675, 48)">
+      <rect width="195" height="145" class="channel-box" />
+      <text x="16" y="28" class="channel-num">CHANNEL 04</text>
+      <text x="16" y="52" class="channel-title">Digital Portfolio</text>
+      <text x="16" y="74" class="channel-meta">Interactive Web</text>
+      <line x1="16" y1="95" x2="179" y2="95" stroke="#1E293B" stroke-width="1" />
+      <circle cx="24" cy="118" r="3.5" fill="#F59E0B" />
+      <text x="36" y="122" class="channel-status" fill="#F59E0B">HTTP 200: Online</text>
+    </g>
+  </a>
+</svg>
