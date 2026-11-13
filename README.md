@@ -1,12 +1,13 @@
 <div align="center">
 
   <!-- ==================== HOLOGRAPHIC ANIMATED HEADING ==================== -->
+<div align="center">
   <img
-  src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.svg"
-  width="100%"
-  alt="Bhavik Vasavada - Holographic Heading"
-/>
-
+    src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.svg"
+    alt="Bhavik Vasavada"
+    width="100%"
+  />
+</div>
   <!-- ==================== LIVE TYPING SVG ANIMATION ==================== -->
   <a href="https://github.com/bhavikmv">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&height=50&lines=%24+python+-m+engineer+--focus+%22Backend+%26+Data+Science%22;M.Sc.+Data+Science+Scholar+%40+Marwadi+University;Python+Backend+Developer+%7C+Django%2C+Flask+%26+REST+APIs;PostgreSQL+%26+MySQL+Relational+Architecture;BCA+Graduate+(2023%E2%80%932026)+%7C+Sahajanand+College;Active+Projects%3A+TourMS%2C+Phonora+%26+GadgetMS" alt="Live Typing Animation" />
