@@ -33,3 +33,4 @@ if (-not $remotes) {
 }
 
 Write-Host "`nDone! Open https://github.com/bhavikmv to view your live profile." -ForegroundColor Green
+
