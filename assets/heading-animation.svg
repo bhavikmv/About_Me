@@ -91,7 +91,7 @@
 
     /* ==================== ANIMATION SEQUENCE ==================== */
 
-    /* 1 & 2: Particle Convergence into Center */
+    
     .particle-cluster {
       animation: assembleSequence 2.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
@@ -127,7 +127,7 @@
       100% { transform: translate(0px, 0px); opacity: 0; }
     }
 
-    /* 3 & 5: Text Reveal with Neon Cyan Glow */
+  
     .title-assembly {
       opacity: 0;
       animation: revealTextGlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
