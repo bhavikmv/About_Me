@@ -1,7 +1,11 @@
 <div align="center">
 
   <!-- ==================== HOLOGRAPHIC ANIMATED HEADING ==================== -->
-  <img src="assets/heading-animation.svg" width="100%" alt="Bhavik Vasavada - Holographic Heading" />
+  <img
+  src="https://raw.githubusercontent.com/bhavikmv/bhavikmv/main/assets/heading-animation.svg"
+  width="100%"
+  alt="Bhavik Vasavada - Holographic Heading"
+/>
 
   <!-- ==================== LIVE TYPING SVG ANIMATION ==================== -->
   <a href="https://github.com/bhavikmv">
