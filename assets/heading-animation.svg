@@ -1,359 +1,373 @@
-<svg width="100%" height="440" viewBox="0 0 900 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<svg width="100%" viewBox="0 0 1000 440"
+     xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Base Deep Space Background Gradient -->
-    <linearGradient id="spaceBase" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030610" />
-      <stop offset="50%" stop-color="#060C1B" />
-      <stop offset="100%" stop-color="#02040A" />
+    <linearGradient id="saffron" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#FFB52E"/>
+      <stop offset="100%" stop-color="#F97316"/>
     </linearGradient>
 
-    <!-- Moving Nebula Glow 1 -->
-    <radialGradient id="nebulaGlow1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0E3258" stop-opacity="0.75" />
-      <stop offset="60%" stop-color="#061A33" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#030610" stop-opacity="0" />
+    <radialGradient id="ambient">
+      <stop offset="0%" stop-color="#A45B0A" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#090806" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Moving Nebula Glow 2 -->
-    <radialGradient id="nebulaGlow2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1E1B4B" stop-opacity="0.65" />
-      <stop offset="60%" stop-color="#0F172A" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#030610" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Moving Nebula Glow 3 -->
-    <radialGradient id="nebulaGlow3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0369A1" stop-opacity="0.5" />
-      <stop offset="70%" stop-color="#0284C7" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#030610" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Diagonal Moving Cyber Grid Pattern -->
-    <pattern id="slidingGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#162942" stroke-width="0.65" stroke-opacity="0.5" />
-    </pattern>
-
-    <!-- Pure White Clean Drop Shadow -->
-    <filter id="whiteCleanGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#FFFFFF" flood-opacity="0.4" />
-      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#38BDF8" flood-opacity="0.25" />
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
-    <filter id="terminalGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00D9FF" flood-opacity="0.15" />
-    </filter>
+    <clipPath id="beamClip">
+      <rect width="1000" height="440"/>
+    </clipPath>
 
-    <!-- Sine Wave Training Boundary Unit -->
-    <path id="sinePath" d="M 0 375 Q 45 358, 90 375 T 180 375 T 270 375 T 360 375 T 450 375 T 540 375 T 630 375 T 720 375 T 810 375 T 900 375 T 990 375 T 1080 375 T 1170 375 T 1260 375" fill="none" stroke="rgba(139, 92, 246, 0.45)" stroke-width="1.6" />
+    <clipPath id="typingClip" clipPathUnits="userSpaceOnUse">
+      <rect x="348" y="325" width="0" height="30">
+        <animate attributeName="width"
+          values="0;0;465;465;0"
+          keyTimes="0;.08;.65;.85;1"
+          dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- BLACK BACKGROUND -->
+  <rect width="1000" height="440" fill="#090806"/>
+
+  <!-- Saffron ambient glow -->
+  <ellipse cx="500" cy="270" rx="450" ry="220"
+           fill="url(#ambient)"/>
+
+  <!-- Subtle grid -->
+  <g opacity=".13" stroke="#B7791F" stroke-width="1">
+    <path d="M0 35 H1000 M0 405 H1000"/>
+    <path d="M60 0 V440 M940 0 V440"/>
+    <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000"/>
+    <path d="M140 0 V440 M220 0 V440 M780 0 V440 M860 0 V440"/>
+  </g>
+
+  <!-- Neural network left -->
+  <g stroke="#D97706" stroke-opacity=".38" fill="none">
+    <path d="M110 100 L205 65 L270 135 L235 210 L155 250 L100 350"/>
+    <path d="M205 65 L235 210 L190 370 L100 350"/>
+    <path d="M270 135 L235 210 L310 335 L190 370"/>
+  </g>
+
+  <!-- Neural network right -->
+  <g stroke="#D97706" stroke-opacity=".38" fill="none">
+    <path d="M890 100 L795 65 L730 135 L765 210 L845 250 L900 350"/>
+    <path d="M795 65 L765 210 L810 370 L900 350"/>
+    <path d="M730 135 L765 210 L690 335 L810 370"/>
+  </g>
+
+  <!-- Neural nodes -->
+  <g fill="#F59E0B">
+    <circle cx="110" cy="100" r="3"/>
+    <circle cx="205" cy="65" r="3"/>
+    <circle cx="270" cy="135" r="3"/>
+    <circle cx="235" cy="210" r="4"/>
+    <circle cx="155" cy="250" r="3"/>
+    <circle cx="100" cy="350" r="3"/>
+    <circle cx="190" cy="370" r="3"/>
+    <circle cx="310" cy="335" r="3"/>
+
+    <circle cx="890" cy="100" r="3"/>
+    <circle cx="795" cy="65" r="3"/>
+    <circle cx="730" cy="135" r="3"/>
+    <circle cx="765" cy="210" r="4"/>
+    <circle cx="845" cy="250" r="3"/>
+    <circle cx="900" cy="350" r="3"/>
+    <circle cx="810" cy="370" r="3"/>
+    <circle cx="690" cy="335" r="3"/>
+  </g>
+
+  <!-- Animated particles -->
+  <g fill="#A3E635">
+    <circle cx="340" cy="80" r="2.5">
+      <animate attributeName="opacity"
+        values=".2;1;.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="90" r="2.5">
+      <animate attributeName="opacity"
+        values="1;.2;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Top label -->
+  <text x="500" y="75" text-anchor="middle"
+        font-family="monospace" font-size="13"
+        font-weight="bold" letter-spacing="6"
+        fill="#FFB52E">
+    [ INITIALIZING NEURAL DATA LAB ]
+    <animate attributeName="opacity"
+      values="1;.55;1" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Main name -->
+  <text x="500" y="160" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="58"
+        font-weight="bold" letter-spacing="4"
+        fill="#FFFFFF" filter="url(#glow)">
+    BHAVIK
+  </text>
+
+  <text x="500" y="218" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="48"
+        font-weight="bold" letter-spacing="8"
+        fill="url(#saffron)" filter="url(#glow)">
+    VASAVADA
+  </text>
+
+  <!-- Subtitle -->
+  <text x="500" y="252" text-anchor="middle"
+        font-family="monospace" font-size="15"
+        letter-spacing="3" fill="#EADCC7">
+    PYTHON DEVELOPER · DATA SCIENCE · AI &amp; ML
+  </text>
+
+  <!-- Terminal -->
+  <rect x="275" y="278" width="450" height="100"
+        rx="11" fill="#090806"
+        stroke="#D97706" stroke-width="1.5"/>
+
+  <rect x="283" y="286" width="434" height="84"
+        rx="8" fill="#F59E0B" opacity=".035"/>
+
+  <!-- Live indicator -->
+  <circle cx="298" cy="302" r="4"
+          fill="#A3E635" filter="url(#glow)">
+    <animate attributeName="opacity"
+      values="1;.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="313" y="307"
+        font-family="Arial, sans-serif"
+        font-size="13" font-weight="bold"
+        fill="#FFB52E">
+    LIVE PYTHON TERMINAL
+  </text>
+
+  <!-- Terminal prompt -->
+  <text x="298" y="346"
+        font-family="monospace"
+        font-size="14" font-weight="bold"
+        fill="#A3E635">&gt;&gt;&gt;</text>
+
+  <!-- Typing animation -->
+  <g clip-path="url(#typingClip)">
+    <text x="348" y="346"
+          font-family="monospace"
+          font-size="14" font-weight="bold"
+          fill="#FFFFFF">
+      p1 = 'Tour Management System (Django)'
+    </text>
+  </g>
+
+  <!-- Blinking typing cursor -->
+  <rect x="348" y="333" width="9" height="17"
+        rx="1" fill="#A3E635">
+    <animate attributeName="x"
+      values="348;348;810;810;348"
+      keyTimes="0;.08;.65;.85;1"
+      dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+      values="1;0;1;0;1"
+      dur=".8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Animated saffron underline -->
+  <rect x="250" y="399" width="500" height="2"
+        rx="1" fill="#49300E"/>
+
+  <rect x="250" y="399" width="500" height="2"
+        rx="1" fill="url(#saffron)">
+    <animate attributeName="width"
+      values="0;500;0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x"
+      values="250;250;750" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Footer -->
+  <text x="500" y="426" text-anchor="middle"
+        font-family="monospace" font-size="13"
+        letter-spacing="5" fill="#FFB52E">
+    THINK · CODE · TRAIN · PREDICT
+  </text>
+
+  <!-- Moving saffron light -->
+  <g clip-path="url(#beamClip)">
+    <rect x="-250" y="0" width="100" height="440"
+          fill="url(#saffron)" opacity=".12"
+          transform="skewX(-20)">
+      <animate attributeName="x"
+        from="-300" to="1200"
+        dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
+
+
+<svg width="100%" height="96" viewBox="0 0 900 96"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <filter id="btnGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="4"
+                    flood-color="#F59E0B" flood-opacity=".3"/>
+    </filter>
   </defs>
 
   <style>
     <![CDATA[
-    /* ==================== 1. FULL BACKGROUND MOVE ANIMATIONS ==================== */
-    .bg-nebula-1 {
-      animation: driftNebula1 16s ease-in-out infinite alternate;
-    }
-    .bg-nebula-2 {
-      animation: driftNebula2 20s ease-in-out infinite alternate;
-    }
-    .bg-nebula-3 {
-      animation: driftNebula3 14s ease-in-out infinite alternate;
-    }
+      .btn-label {
+        font-family: Consolas, 'Courier New', monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+        fill: #FFFFFF;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
 
-    @keyframes driftNebula1 {
-      0% { transform: translate(-80px, -40px) scale(0.9); }
-      50% { transform: translate(120px, 30px) scale(1.15); }
-      100% { transform: translate(-30px, 60px) scale(1); }
-    }
-    @keyframes driftNebula2 {
-      0% { transform: translate(100px, 50px) scale(1.1); }
-      50% { transform: translate(-90px, -30px) scale(0.95); }
-      100% { transform: translate(60px, -50px) scale(1.05); }
-    }
-    @keyframes driftNebula3 {
-      0% { transform: translate(0px, 30px); }
-      50% { transform: translate(-100px, -50px); }
-      100% { transform: translate(80px, -20px); }
-    }
+      .btn-prefix {
+        fill: #D6A65A;
+        font-weight: 400;
+      }
 
-    /* Moving Grid Layer */
-    .bg-grid-layer {
-      animation: slideGrid 12s linear infinite;
-    }
-    @keyframes slideGrid {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(-40px, -40px); }
-    }
+      .btn-val {
+        fill: #FFFFFF;
+      }
 
-    /* Background Constellation Drift */
-    .constellation-drift-left {
-      animation: driftFloat1 18s ease-in-out infinite alternate;
-    }
-    .constellation-drift-right {
-      animation: driftFloat2 15s ease-in-out infinite alternate;
-    }
-    @keyframes driftFloat1 {
-      0% { transform: translate(0px, 0px); }
-      50% { transform: translate(25px, -18px); }
-      100% { transform: translate(-15px, 20px); }
-    }
-    @keyframes driftFloat2 {
-      0% { transform: translate(0px, 0px); }
-      50% { transform: translate(-22px, 16px); }
-      100% { transform: translate(18px, -15px); }
-    }
+      .pill-btn-1, .pill-btn-2, .pill-btn-3,
+      .pill-btn-4, .pill-btn-5, .pill-btn-6 {
+        animation: saffronFlow 6s ease-in-out infinite;
+        filter: url(#btnGlow);
+      }
 
-    /* Flowing Training Boundary Wave */
-    .training-wave {
-      animation: flowSineWave 8s linear infinite;
-    }
-    @keyframes flowSineWave {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-180px); }
-    }
+      .pill-btn-2 { animation-delay: -1s; }
+      .pill-btn-3 { animation-delay: -2s; }
+      .pill-btn-4 { animation-delay: -3s; }
+      .pill-btn-5 { animation-delay: -4s; }
+      .pill-btn-6 { animation-delay: -5s; }
 
-    /* Streaming Data Particles Across Moving Background */
-    .data-stream-fast {
-      animation: streamDataFast 9s linear infinite;
-    }
-    .data-stream-slow {
-      animation: streamDataSlow 13s linear infinite;
-    }
-    @keyframes streamDataFast {
-      0% { transform: translateX(-100px); opacity: 0; }
-      12% { opacity: 0.7; }
-      88% { opacity: 0.7; }
-      100% { transform: translateX(960px); opacity: 0; }
-    }
-    @keyframes streamDataSlow {
-      0% { transform: translateX(-120px); opacity: 0; }
-      15% { opacity: 0.55; }
-      85% { opacity: 0.55; }
-      100% { transform: translateX(980px); opacity: 0; }
-    }
+      @keyframes saffronFlow {
+        0%   { stroke: #D97706; }
+        25%  { stroke: #FFB52E; }
+        50%  { stroke: #F97316; }
+        75%  { stroke: #E8A126; }
+        100% { stroke: #D97706; }
+      }
 
-    /* Node Pulses */
-    .node-pulse {
-      animation: pulseNode 3s ease-in-out infinite alternate;
-    }
-    @keyframes pulseNode {
-      0% { opacity: 0.4; }
-      100% { opacity: 1; }
-    }
+      .live-dot {
+        animation: dotPulse 2s ease-in-out infinite;
+      }
 
-    /* ==================== 2. PURE WHITE CLEAN TYPOGRAPHY ==================== */
-    .headline-pure-white {
-      font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-weight: 900;
-      font-size: 47px;
-      letter-spacing: 4px;
-      fill: #FFFFFF;
-      text-anchor: middle;
-    }
-
-    .eyebrow-text {
-      font-family: Consolas, 'Courier New', monospace;
-      font-size: 11px;
-      letter-spacing: 4px;
-      fill: #00E5FF;
-      text-anchor: middle;
-      opacity: 0.9;
-    }
-    .subtitle-text {
-      font-family: Consolas, 'Courier New', monospace;
-      font-size: 13.5px;
-      letter-spacing: 2.2px;
-      fill: #A9C8DF;
-      text-anchor: middle;
-    }
-    .bottom-tag {
-      font-family: Consolas, 'Courier New', monospace;
-      font-size: 10px;
-      letter-spacing: 3.5px;
-      fill: #00D9FF;
-      text-anchor: middle;
-      opacity: 0.85;
-    }
-
-    /* ==================== 3. LIVE TERMINAL CYCLING ==================== */
-    .terminal-line {
-      font-family: Consolas, 'Courier New', monospace;
-      font-size: 11.5px;
-      letter-spacing: 0.5px;
-    }
-    .cursor-blink {
-      animation: blinkCursor 0.8s step-start infinite;
-    }
-    @keyframes blinkCursor {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-
-    .cmd-cycle-1 { animation: cycleCommand1 15s infinite; }
-    .cmd-cycle-2 { animation: cycleCommand2 15s infinite; }
-    .cmd-cycle-3 { animation: cycleCommand3 15s infinite; }
-    .cmd-cycle-4 { animation: cycleCommand4 15s infinite; }
-    .cmd-cycle-5 { animation: cycleCommand5 15s infinite; }
-    .cmd-cycle-6 { animation: cycleCommand6 15s infinite; }
-
-    @keyframes cycleCommand1 { 0%, 14% { opacity: 1; } 16%, 100% { opacity: 0; } }
-    @keyframes cycleCommand2 { 0%, 15% { opacity: 0; } 17%, 31% { opacity: 1; } 33%, 100% { opacity: 0; } }
-    @keyframes cycleCommand3 { 0%, 32% { opacity: 0; } 34%, 48% { opacity: 1; } 50%, 100% { opacity: 0; } }
-    @keyframes cycleCommand4 { 0%, 49% { opacity: 0; } 51%, 65% { opacity: 1; } 67%, 100% { opacity: 0; } }
-    @keyframes cycleCommand5 { 0%, 66% { opacity: 0; } 68%, 82% { opacity: 1; } 84%, 100% { opacity: 0; } }
-    @keyframes cycleCommand6 { 0%, 83% { opacity: 0; } 85%, 98% { opacity: 1; } 100% { opacity: 0; } }
+      @keyframes dotPulse {
+        0%, 100% { opacity: .4; }
+        50% { opacity: 1; }
+      }
     ]]>
   </style>
 
-  <!-- Container Base -->
-  <rect x="1" y="1" width="898" height="438" rx="14" fill="url(#spaceBase)" stroke="#173D58" stroke-width="1.2" />
+  <!-- BLACK BACKGROUND -->
+  <rect width="900" height="96" fill="#090806"/>
 
-  <!-- ==================== MOVING BACKGROUND LAYER ==================== -->
-  <g opacity="0.9">
-    <!-- Moving Nebula 1 (Deep Blue Center) -->
-    <g class="bg-nebula-1">
-      <circle cx="360" cy="180" r="280" fill="url(#nebulaGlow1)" />
-    </g>
+  <!-- ROW 1: STATUS AND EDUCATION -->
 
-    <!-- Moving Nebula 2 (Deep Violet-Slate) -->
-    <g class="bg-nebula-2">
-      <circle cx="580" cy="240" r="300" fill="url(#nebulaGlow2)" />
-    </g>
+  <!-- STATUS -->
+  <g transform="translate(75, 8)">
+    <rect width="230" height="34" rx="17"
+          fill="#090806" stroke="#D97706"
+          stroke-width="1.6" class="pill-btn-1"/>
 
-    <!-- Moving Nebula 3 (Electric Cyan Horizon) -->
-    <g class="bg-nebula-3">
-      <circle cx="450" cy="360" r="240" fill="url(#nebulaGlow3)" />
-    </g>
-  </g>
+    <circle cx="22" cy="17" r="3.5"
+            fill="#A3E635" class="live-dot"/>
 
-  <!-- Sliding Cyber Grid Pattern Layer -->
-  <g class="bg-grid-layer" opacity="0.65">
-    <rect x="-40" y="-40" width="980" height="520" fill="url(#slidingGrid)" />
-  </g>
-
-  <!-- Drifting Neural Constellations in Background -->
-  <!-- Constellation Left -->
-  <g class="constellation-drift-left">
-    <g stroke="rgba(0, 190, 255, 0.3)" stroke-width="0.7">
-      <line x1="80" y1="90" x2="160" y2="60" />
-      <line x1="160" y1="60" x2="220" y2="120" />
-      <line x1="160" y1="60" x2="190" y2="180" />
-      <line x1="220" y1="120" x2="190" y2="180" />
-      <line x1="80" y1="90" x2="110" y2="210" />
-      <line x1="110" y1="210" x2="190" y2="180" />
-      <line x1="110" y1="210" x2="60" y2="300" />
-      <line x1="190" y1="180" x2="140" y2="320" />
-      <line x1="60" y1="300" x2="140" y2="320" />
-      <line x1="140" y1="320" x2="240" y2="280" />
-      <line x1="190" y1="180" x2="240" y2="280" />
-    </g>
-    <g fill="#00D9FF" class="node-pulse">
-      <circle cx="80" cy="90" r="2.5" />
-      <circle cx="160" cy="60" r="3" />
-      <circle cx="220" cy="120" r="2" />
-      <circle cx="190" cy="180" r="3.2" />
-      <circle cx="110" cy="210" r="2.5" />
-      <circle cx="60" cy="300" r="2" />
-      <circle cx="140" cy="320" r="2.5" />
-      <circle cx="240" cy="280" r="3" />
-    </g>
-  </g>
-
-  <!-- Constellation Right -->
-  <g class="constellation-drift-right">
-    <g stroke="rgba(0, 190, 255, 0.3)" stroke-width="0.7">
-      <line x1="820" y1="80" x2="740" y2="60" />
-      <line x1="740" y1="60" x2="680" y2="130" />
-      <line x1="740" y1="60" x2="720" y2="190" />
-      <line x1="680" y1="130" x2="720" y2="190" />
-      <line x1="820" y1="80" x2="790" y2="220" />
-      <line x1="720" y1="190" x2="790" y2="220" />
-      <line x1="790" y1="220" x2="840" y2="310" />
-      <line x1="720" y1="190" x2="750" y2="330" />
-      <line x1="750" y1="330" x2="840" y2="310" />
-      <line x1="680" y1="130" x2="650" y2="270" />
-      <line x1="650" y1="270" x2="750" y2="330" />
-    </g>
-    <g fill="#00D9FF" class="node-pulse">
-      <circle cx="820" cy="80" r="2.5" />
-      <circle cx="740" cy="60" r="3" />
-      <circle cx="680" cy="130" r="2" />
-      <circle cx="720" cy="190" r="3.2" />
-      <circle cx="790" cy="220" r="2.5" />
-      <circle cx="840" cy="310" r="2" />
-      <circle cx="750" cy="330" r="2.5" />
-      <circle cx="650" cy="270" r="3" />
-    </g>
-  </g>
-
-  <!-- Streaming Data Particles Layer -->
-  <g class="data-stream-fast">
-    <circle cx="50" cy="75" r="2" fill="#00E5FF" />
-    <circle cx="190" cy="225" r="2.2" fill="#00E5FF" />
-    <circle cx="340" cy="65" r="1.8" fill="#00E5FF" />
-    <circle cx="590" cy="255" r="2" fill="#00E5FF" />
-    <circle cx="730" cy="105" r="2.2" fill="#00E5FF" />
-    <circle cx="850" cy="235" r="1.8" fill="#00E5FF" />
-  </g>
-  <g class="data-stream-slow">
-    <circle cx="100" cy="135" r="2" fill="#A78BFA" />
-    <circle cx="270" cy="275" r="2" fill="#A78BFA" />
-    <circle cx="490" cy="70" r="1.8" fill="#A78BFA" />
-    <circle cx="650" cy="165" r="2" fill="#A78BFA" />
-    <circle cx="790" cy="285" r="2" fill="#A78BFA" />
-  </g>
-
-  <!-- Flowing Training Wave across bottom -->
-  <g class="training-wave">
-    <use href="#sinePath" x="0" y="0" />
-    <use href="#sinePath" x="180" y="0" />
-  </g>
-
-  <!-- ==================== FOREGROUND CONTENT ==================== -->
-  <!-- 1. Eyebrow -->
-  <text x="450" y="88" class="eyebrow-text">[ INITIALIZING NEURAL DATA LAB ]</text>
-
-  <!-- 2. Headline: PURE WHITE (NO COLORING) WITH CLEAN GLOW -->
-  <text x="450" y="160" class="headline-pure-white" filter="url(#whiteCleanGlow)">
-    BHAVIK VASAVADA
-  </text>
-
-  <!-- 3. Subtitle -->
-  <text x="450" y="198" class="subtitle-text">
-    PYTHON DEVELOPER · DATA SCIENCE · AI/ML
-  </text>
-
-  <!-- 4. Live Python Terminal Box -->
-  <g transform="translate(450, 240)">
-    <rect x="-195" y="0" width="390" height="74" rx="7" fill="#06101D" fill-opacity="0.92" stroke="#00D9FF" stroke-opacity="0.45" stroke-width="1.2" filter="url(#terminalGlow)" />
-    <circle cx="-176" cy="20" r="3.5" fill="#00D9FF" />
-    <text x="-164" y="24" class="mono-font" font-size="11" font-weight="700" fill="#00D9FF" letter-spacing="0.8">
-      LIVE PYTHON TERMINAL
+    <text x="124" y="17" class="btn-label">
+      <tspan class="btn-prefix">STATUS: </tspan>
+      <tspan class="btn-val">ACTIVELY BUILDING</tspan>
     </text>
-
-    <!-- Cycling Commands -->
-    <g class="cmd-cycle-1">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">import pandas as pd</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
-    </g>
-    <g class="cmd-cycle-2">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">data = pd.read_csv('dataset.csv')</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
-    </g>
-    <g class="cmd-cycle-3">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">data.dropna(inplace=True)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
-    </g>
-    <g class="cmd-cycle-4">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">model.fit(X_train, y_train)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
-    </g>
-    <g class="cmd-cycle-5">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">prediction = model.predict(X_test)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
-    </g>
-    <g class="cmd-cycle-6">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">print('Model ready!')</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
-    </g>
   </g>
 
-  <!-- 5. Bottom Tagline -->
-  <text x="450" y="375" class="bottom-tag">
-    THINK · CODE · TRAIN · PREDICT
-  </text>
+  <!-- FOCUS -->
+  <g transform="translate(325, 8)">
+    <rect width="250" height="34" rx="17"
+          fill="#090806" stroke="#D97706"
+          stroke-width="1.6" class="pill-btn-2"/>
+
+    <circle cx="22" cy="17" r="3.5"
+            fill="#F59E0B"/>
+
+    <text x="134" y="17" class="btn-label">
+      <tspan class="btn-prefix">FOCUS: </tspan>
+      <tspan class="btn-val">M.SC DATA SCIENCE</tspan>
+    </text>
+  </g>
+
+  <!-- LOCATION -->
+  <g transform="translate(595, 8)">
+    <rect width="230" height="34" rx="17"
+          fill="#090806" stroke="#D97706"
+          stroke-width="1.6" class="pill-btn-3"/>
+
+    <circle cx="22" cy="17" r="3.5"
+            fill="#F59E0B"/>
+
+    <text x="124" y="17" class="btn-label">
+      <tspan class="btn-prefix">LOCATION: </tspan>
+      <tspan class="btn-val">GUJARAT, INDIA</tspan>
+    </text>
+  </g>
+
+  <!-- ROW 2: CONTACT BUTTONS -->
+
+  <!-- EMAIL -->
+  <a href="mailto:bhavikmv5@gmail.com">
+    <g transform="translate(160, 52)">
+      <rect width="180" height="34" rx="17"
+            fill="#090806" stroke="#D97706"
+            stroke-width="1.6" class="pill-btn-4"/>
+
+      <text x="90" y="17" class="btn-label">
+        <tspan fill="#FFB52E">✉ </tspan>
+        <tspan class="btn-prefix">CONTACT: </tspan>
+        <tspan class="btn-val">EMAIL</tspan>
+      </text>
+    </g>
+  </a>
+
+  <!-- GITHUB -->
+  <a href="https://github.com/bhavikmv">
+    <g transform="translate(360, 52)">
+      <rect width="180" height="34" rx="17"
+            fill="#090806" stroke="#D97706"
+            stroke-width="1.6" class="pill-btn-5"/>
+
+      <text x="90" y="17" class="btn-label">
+        <tspan fill="#FFB52E">⌘ </tspan>
+        <tspan class="btn-prefix">GITHUB: </tspan>
+        <tspan class="btn-val">FOLLOW</tspan>
+      </text>
+    </g>
+  </a>
+
+  <!-- LINKEDIN -->
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
+    <g transform="translate(560, 52)">
+      <rect width="180" height="34" rx="17"
+            fill="#090806" stroke="#D97706"
+            stroke-width="1.6" class="pill-btn-6"/>
+
+      <text x="90" y="17" class="btn-label">
+        <tspan fill="#FFB52E">✦ </tspan>
+        <tspan class="btn-prefix">LINKEDIN: </tspan>
+        <tspan class="btn-val">CONNECT</tspan>
+      </text>
+    </g>
+  </a>
 </svg>
