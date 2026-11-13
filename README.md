@@ -2,7 +2,7 @@
 
   <!-- ==================== HOLOGRAPHIC ANIMATED HEADING ==================== -->
   <img
-  src="https://raw.githubusercontent.com/bhavikmv/bhavikmv/main/assets/heading-animation.svg"
+  src="https://raw.githubusercontent.com/bhavikmv/About_Me/main/assets/heading-animation.svg"
   width="100%"
   alt="Bhavik Vasavada - Holographic Heading"
 />
