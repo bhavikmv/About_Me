@@ -331,24 +331,24 @@
       LIVE PYTHON TERMINAL
     </text>
 
-    <!-- Cycling Commands -->
+    <!-- Cycling Commands: Education, Projects & Tech Stack -->
     <g class="cmd-cycle-1">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">import pandas as pd</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">edu = 'M.Sc. Data Science @ Marwadi Univ'</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
     <g class="cmd-cycle-2">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">data = pd.read_csv('dataset.csv')</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">bca = 'BCA (2023-2026) @ Sahajanand'</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
     <g class="cmd-cycle-3">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">data.dropna(inplace=True)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">p1 = 'Tour Management System (Django)'</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
     <g class="cmd-cycle-4">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">model.fit(X_train, y_train)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">p2 = 'Phonora Mobile Shop (PHP &amp; MySQL)'</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
     <g class="cmd-cycle-5">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">prediction = model.predict(X_test)</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">p3 = 'Gadget Management Portal (Django)'</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
     <g class="cmd-cycle-6">
-      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">print('Model ready!')</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
+      <text x="-176" y="52" class="terminal-line" fill="#62FFB5">&gt;&gt;&gt; <tspan fill="#E2E8F0">stack = ['Python', 'Django', 'SQL', 'ML']</tspan><tspan fill="#00D9FF" class="cursor-blink"> █</tspan></text>
     </g>
   </g>
 
